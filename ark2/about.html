@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARK</title>
+
+    <!--rest css-->
+    <link rel="stylesheet" href="common/css/reset.css">
+    <link rel="stylesheet" href="common/css/normalize.css">
+    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <style>
+
+        
+      
+    </style>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+
+
+        $(function () {
+
+            $(window).scroll(function () {
+
+                //스크롤 메뉴 감지부분
+                $('#stest').text($(document).scrollTop());
+                if ($(document).scrollTop() >= 720) {
+                    $('header').addClass('active');
+                }
+                else{
+                    $('header').removeClass('active');
+                }
+                
+            });
+
+            $('.menu_parent').hover(function () {
+                $(this).find('div').show();
+            }, function () {
+                $(this).find('div').hide();
+            });
+
+            $('#m_Btn').click(function(){
+                $('#m_Menu').removeClass('d-none');
+            });
+
+            $('.container').click(function(){
+                $('#m_Menu').addClass('d-none');
+            });
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="layout_flex_between wrap">
+            <h1 class="logo"></h1>
+            <div class="layout_flex_between">
+                <div class="menu_pc layout_flex_between">
+                    <nav class="layout_flex_between">
+                        <div class="active">HOME</div>
+                        <div class="menu_parent">회사소개
+                            <div id="sub_menu" class="menu_depth">
+                                <a href="javascript:void(0)">인사말</a>
+                                <a href="javascript:void(0)">업무소개</a>
+                                <a href="javascript:void(0)">오시는길</a>
+                            </div>
+                        </div>
+                        <div>지원서비스</div>
+                        <div>문의</div>
+                        <div id='stest'>test</div>
+                    </nav>
+                    <div class="global_btn menu_parent"><span>global</span>
+                        <div class="menu_depth">
+                            <a href="">KOR</a>
+                            <a href="">ENG</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_mobile">
+                    <a href="javascript:void(0)" id="m_Btn" class="m_menu open"></a>
+                    <nav id='m_Menu' class="d-none">
+                        <a href="javascript:void(0)" class="m_menu close"></a>
+                        <div>HOME</div>
+                        <div class="">회사소개
+                            <div class="sub_menu">
+                                <a href="javascript:void(0)">인사말</a>
+                                <a href="javascript:void(0)">업무소개</a>
+                                <a href="javascript:void(0)">오시는길</a>
+                            </div>
+                        </div>
+                        <div>지원서비스</div>
+                        <div>문의</div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container sub">
+        <section class="message">
+            <div class="wrap">
+                <h2 class="title">MESSAGE</h2>
+                <p class="sub_title">ARK는 국내 대형 회계법인 삼일에서 삼성 그룹 포함 다수의 대기업 및 각 산업분야마다 특화된 업무를 담당했던 회계사들이 함께 뜻을 모아 시작하였습니다.</p>
+                <p class="">각 분야의 기업들과 함께 발맞춰 성장한 경험을 바탕으로 짧은 기간이지만 빠른 성장을 거듭하며 현재 IT사업부, 패션사업부, 방송연예사업부, 유통사업부, 건설사업부로 사업 영역을 넓히고 있습니다. 이미 든든히 뿌리 내린 기업들의 동반자이자 새로운 도전을 하고 있는 잠재력 있는 젊은 기업들이 튼튼하게 성장하고 그 가치를 인정받을 수 있도록 지원하는 보조자 역할을 충실히 해낼 것을 약속 드립니다.</p>
+                <p class="slogun">저희 ARK는 새로운 시대를 선도하는 기업으로 성장하는 고객사들을 응원하며 함께 달리는 러닝메이트가 되겠습니다.</p>
+            </div>
+        </section>
+        <section class="partner">
+            <div class="wrap">
+                <h2 class="title">PARTNERS</h2>
+                <div class="profile_area d-flex justify-content-start align-items-start">
+                    <div class="profile">
+                        <img src="common/images/img_profile-1.png">
+                        <div class="profile_txt">
+                            <div class="name">
+                                <span>공인회계사</span>
+                                <strong>최진호</strong>
+                            </div>
+                            <ul class="hitory">
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <img src="common/images/img_profile-1.png">
+                        <div class="profile_txt">
+                            <div class="name">
+                                <span>공인회계사</span>
+                                <strong>최진호</strong>
+                            </div>
+                            <ul class="hitory">
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <img src="common/images/img_profile-1.png">
+                        <div class="profile_txt">
+                            <div class="name">
+                                <span>공인회계사</span>
+                                <strong>최진호</strong>
+                            </div>
+                            <ul class="hitory">
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <img src="common/images/img_profile-1.png">
+                        <div class="profile_txt">
+                            <div class="name">
+                                <span>공인회계사</span>
+                                <strong>최진호</strong>
+                            </div>
+                            <ul class="hitory">
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <img src="common/images/img_profile-1.png">
+                        <div class="profile_txt">
+                            <div class="name">
+                                <span>공인회계사</span>
+                                <strong>최진호</strong>
+                            </div>
+                            <ul class="hitory">
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                                <li>연세대학교 졸업</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="business">
+            <div class="wrap">
+                <h2 class="title">BUSINESS</h2>
+                <p class="sub_title">과거 프로세스를 점검하는 일부터 미래를 준비하는 일까지, 기업이 튼튼하고 내실있게 성장할 수 있도록 도와드립니다.</p>
+                <div class="process d-flex justify-content-around align-content-start">
+                    <div class="process01">
+                        <div class="proc_infogram">
+                            <img src="common/images/img_biz-1.png">
+                            <strong class="proc_title">과거 재무 프로세스 점검 과정 설명</strong>
+                        </div>
+                        <div class="proc_cont list_style_square">
+                            <img src="common/images/ico_biz-1.png">
+                            <p class="proc_title">과거 재무 프로세스 점검 과정 설명</p>
+                            <ul>
+                                <li>과거 운영 시스템 및 현행 재무 프로세스 검토</li>
+                                <li>과거 운영 시스템 및 현행 재무 프로세스 검토</li>
+                                <li>과거 운영 시스템 및 현행 재무 프로세스 검토</li>
+                                <li>과거 운영 시스템 및 현행 재무 프로세스 검토</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="process02">
+                        <div class="proc_infogram">
+                            <img src="common/images/img_biz-2.png">
+                            <strong class="proc_title">내부 경영 전반 업무 지원 종류 설명</strong>
+                        </div>
+                        <div class="proc_cont list_style_square">
+                            <img src="common/images/ico_biz-2.png">
+                            <p class="proc_title">내부 경영 전반 업무 지원 종류 설명</p>
+                            <div class="list_cate">
+                                <strong>accounting</strong>
+                                <ul>
+                                    <li>제무재표 작성 지원</li>
+                                    <li>경영성과 및 재무비율 분석</li>
+                                    <li>자금흐름 검토</li>
+                                    <li>매출 정산 및 원가 분석 검토</li>
+                                </ul>
+                            </div>
+                            <div class="list_cate">
+                                <strong>tax</strong>
+                                <ul>
+                                    <li>법인세 및 부가세 신고 대리</li>
+                                    <li>세무 위험 및 절세 플랜 관리</li>
+                                </ul>
+                            </div>
+                            <div class="list_cate">
+                                <strong>hr/etc</strong>
+                                <ul>
+                                    <li>급여 및 4대보험 관리</li>
+                                    <li>내부통제시스템 구축 지원</li>
+                                    <li>노무자문 대행</li>
+                                    <li>특허권 및 지적재산권 출원 지원</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process03">
+                        <div class="proc_infogram">
+                            <img src="common/images/img_biz-3.png">
+                            <strong class="proc_title">향후 재무계획 수립</strong>
+                        </div>
+                        <div class="proc_cont list_style_square">
+                            <img src="common/images/ico_biz-3.png">
+                            <p class="proc_title">향후 재무계획 수립</p>
+                            <div class="list_cate">
+                                <strong>inbound finance</strong>
+                                <ul>
+                                    <li>정부지원 사업 안내 및 신청 대행</li>
+                                    <li>세정책자금 및 제1금융권 대출 업무 대행</li>
+                                    <li>자금 계획수립 및 조달 전략 검토</li>
+                                    <li>재무기반 사업전략 및 계획 검토</li>
+                                </ul>
+                            </div>
+                            <div class="list_cate">
+                                <strong>outbound finance</strong>
+                                <ul>
+                                    <li>기업 가치평가 및 실사</li>
+                                    <li>주식양수도 및 자본거래 검토</li>
+                                    <li>사업양수도 검토</li>
+                                    <li>기업매각 및 인수합병 M&A 주선</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact sub">
+            <div class="wrap" id="map">
+                <div class="map">
+                    <p>무엇이든 아크에게 편하게 문의하세요!</p>
+                    <div class="contact_area">
+                        <h3>ARK와 함께 좋은 에너지를 나누고<br>함께 성장하실 분을 기다립니다.</h3>
+                        <strong>contact</strong>
+                        <p>E-mail: taxpeople@taxpeople.kr</p>
+                        <p>Phone: 02-2088-4860</p>
+                        <p>서울시 성동구 왕십리로 16가길 12 2층</p>
+                    </div>
+                    <div class="btn_area">
+                        <a href="" class="btn chat">채널톡 채팅문의</a>
+                        <a href="" class="btn download border">회사소개서 다운로드</a>
+                    </div>
+                </div>
+                
+                <!-- <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=df6fd3294f6e4c00960928e623927095"></script> -->
+
+                <script src="sdk.js"></script>
+
+                <script>
+
+                    $(function () {
+                        fn_Map();
+                    });
+
+                    function fn_Map() {
+                        var markers = [
+                            {
+                                position: new kakao.maps.LatLng(37.5504480, 127.0449278),
+                                text: 'ARK|회계법인' // text 옵션을 설정하면 마커 위에 텍스트를 함께 표시할 수 있습니다     
+                            }
+                        ];
+
+                        var staticMapContainer = document.getElementById('map'), // 이미지 지도를 표시할 div  
+                            staticMapOption = {
+                                center: new kakao.maps.LatLng(37.5504480, 127.0449278), // 이미지 지도의 중심좌표
+                                level: 4, // 이미지 지도의 확대 레벨
+                                marker: markers // 이미지 지도에 표시할 마커 
+                            };
+
+                        // 이미지 지도를 생성합니다
+                        new kakao.maps.StaticMap(staticMapContainer, staticMapOption);
+                    }
+
+
+                </script>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="wrap">
+            <h3 class="footer_logo"><img src="common/images/logo.svg" /></h3>
+            <div class="footer_wrap d-flex justify-content-start align-item-center">
+                <div class="address">
+                    <p>
+                        서울시 성동구 왕십리로 16가길 12 2층<br>
+                        2F, 12, Wangsimni-ro 16ga-gil, Seongdong-gu, Seoul, Republic of Korea<br>
+                        대표: 최진호​<br>
+                        사업자번호: 896-72-00261
+                    </p>
+                    <small>Copyright (c) 2021 ARK. All Right Reserved.</small>
+                </div>
+                <div class="call">
+                    <strong>CONTACT</strong>
+                    <p>
+                        E-mail: taxpeople@taxpeople.kr<br>
+                        <a href="tel:02-2088-4860">Phone: 02-2088-4860</a><br>
+                        Fax: 0507-0303-5049<br>
+                        Monday - Friday: 10am - 6pm​​<br>
+                        Saturday - Sunday: Closed
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a class="top_btn" href="#"></a>
+</body>
+
+</html>

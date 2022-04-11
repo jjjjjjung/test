@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARK</title>
+
+    <!--rest css-->
+    <link rel="stylesheet" href="common/css/reset.css">
+    <link rel="stylesheet" href="common/css/normalize.css">
+    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <style>
+
+        
+      
+    </style>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+
+
+        $(function () {
+
+            $(window).scroll(function () {
+
+                //스크롤 메뉴 감지부분
+                $('#stest').text($(document).scrollTop());
+                if ($(document).scrollTop() >= 720) {
+                    $('header').addClass('active');
+                }
+                else{
+                    $('header').removeClass('active');
+                }
+                
+            });
+
+            $('.menu_parent').hover(function () {
+                $(this).find('div').show();
+            }, function () {
+                $(this).find('div').hide();
+            });
+
+            $('#m_Btn').click(function(){
+                $('#m_Menu').removeClass('d-none');
+            });
+
+            $('.container').click(function(){
+                $('#m_Menu').addClass('d-none');
+            });
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="layout_flex_between wrap">
+            <h1 class="logo"></h1>
+            <div class="layout_flex_between">
+                <div class="menu_pc layout_flex_between">
+                    <nav class="layout_flex_between">
+                        <div class="active">HOME</div>
+                        <div class="menu_parent">회사소개
+                            <div id="sub_menu" class="menu_depth">
+                                <a href="javascript:void(0)">인사말</a>
+                                <a href="javascript:void(0)">업무소개</a>
+                                <a href="javascript:void(0)">오시는길</a>
+                            </div>
+                        </div>
+                        <div>지원서비스</div>
+                        <div>문의</div>
+                        <div id='stest'>test</div>
+                    </nav>
+                    <div class="global_btn menu_parent"><span>global</span>
+                        <div class="menu_depth">
+                            <a href="">KOR</a>
+                            <a href="">ENG</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_mobile">
+                    <a href="javascript:void(0)" id="m_Btn" class="m_menu open"></a>
+                    <nav id='m_Menu' class="d-none">
+                        <a href="javascript:void(0)" class="m_menu close"></a>
+                        <div>HOME</div>
+                        <div class="">회사소개
+                            <div class="sub_menu">
+                                <a href="javascript:void(0)">인사말</a>
+                                <a href="javascript:void(0)">업무소개</a>
+                                <a href="javascript:void(0)">오시는길</a>
+                            </div>
+                        </div>
+                        <div>지원서비스</div>
+                        <div>문의</div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container sub">
+        <div class="wrap">
+            <section class="package">            
+                <h2 class="title">PACKAGE</h2>
+                <div class="package_list d-flex justify-content-between align-content-start">
+                    <div class="package_box packageA ">
+                        <div class="pkg_title">package A</div>
+                        <div class="pkg_body list_style_square">
+                            <img src="common/images/packageA.png">
+                            <ul>
+                                <li>기장</li>
+                                <li>세무조정</li>
+                                <li>급여업무 대행</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="package_box packageB ">
+                        <div class="pkg_title">package B</div>
+                        <div class="pkg_body list_style_square">
+                            <img src="common/images/packageB.png">
+                            <strong class="pkg_sub_ttl">패키지 A 서비스 포함</strong>
+                            <ul>
+                                <li>기장</li>
+                                <li>세무조정</li>
+                                <li>급여업무 대행</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="package_box packageC ">
+                        <div class="pkg_title">package C</div>
+                        <div class="pkg_body list_style_square">
+                            <img src="common/images/packageC.png">
+                            <strong class="pkg_sub_ttl">패키지 B 서비스 포함</strong>
+                            <ul>
+                                <li>기장</li>
+                                <li>세무조정</li>
+                                <li>급여업무 대행</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="package_box packageD ">
+                        <div class="pkg_title">package D</div>
+                        <div class="pkg_body list_style_square">
+                            <img src="common/images/packageD.png">
+                            <strong class="pkg_sub_ttl">패키지 C 서비스 포함</strong>
+                            <ul>
+                                <li>기장</li>
+                                <li>세무조정</li>
+                                <li>급여업무 대행</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+    </div>
+    </div>
+    <footer>
+        <div class="wrap">
+            <h3 class="footer_logo"><img src="common/images/logo.svg" /></h3>
+            <div class="footer_wrap d-flex justify-content-start align-item-center">
+                <div class="address">
+                    <p>
+                        서울시 성동구 왕십리로 16가길 12 2층<br>
+                        2F, 12, Wangsimni-ro 16ga-gil, Seongdong-gu, Seoul, Republic of Korea<br>
+                        대표: 최진호​<br>
+                        사업자번호: 896-72-00261
+                    </p>
+                    <small>Copyright (c) 2021 ARK. All Right Reserved.</small>
+                </div>
+                <div class="call">
+                    <strong>CONTACT</strong>
+                    <p>
+                        E-mail: taxpeople@taxpeople.kr<br>
+                        <a href="tel:02-2088-4860">Phone: 02-2088-4860</a><br>
+                        Fax: 0507-0303-5049<br>
+                        Monday - Friday: 10am - 6pm​​<br>
+                        Saturday - Sunday: Closed
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a class="top_btn" href="#"></a>
+</body>
+
+</html>

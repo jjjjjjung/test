@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARK</title>
+
+    <!--rest css-->
+    <link rel="stylesheet" href="common/css/reset.css">
+    <link rel="stylesheet" href="common/css/normalize.css">
+    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+
+
+        $(function () {
+
+            $(window).scroll(function () {
+
+                //스크롤 메뉴 감지부분
+                // $('#stest').text($(document).scrollTop());
+                if ($(document).scrollTop() >= 720) {
+                    $('header').addClass('active');
+                }
+                else{
+                    $('header').removeClass('active');
+                }
+                
+            });
+
+            $('.menu_parent').hover(function () {
+                $(this).find('div').show();
+            }, function () {
+                $(this).find('div').hide();
+            });
+
+            $('#m_Btn').click(function(){
+                $('#m_Menu').removeClass('d-none');
+            });
+
+            $('.container').click(function(){
+                $('#m_Menu').addClass('d-none');
+            });
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="layout_flex_between wrap">
+            <h1 class="logo"></h1>
+            <div class="layout_flex_between">
+                <div class="menu_pc layout_flex_between">
+                    <nav class="layout_flex_between">
+                        <div class="active">HOME</div>
+                        <div class="menu_parent">회사소개
+                            <div id="sub_menu" class="menu_depth">
+                                <a href="javascript:void(0)">인사말</a>
+                                <a href="javascript:void(0)">업무소개</a>
+                                <a href="javascript:void(0)">오시는길</a>
+                            </div>
+                        </div>
+                        <div>지원서비스</div>
+                        <div>문의</div>
+                    </nav>
+                    <div class="global_btn menu_parent"><span>global</span>
+                        <div class="menu_depth">
+                            <a href="">KOR</a>
+                            <a href="">ENG</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_mobile">
+                    <a href="javascript:void(0)" id="m_Btn" class="m_menu open"></a>
+                    <nav id='m_Menu' class="d-none">
+                        <a href="javascript:void(0)" class="m_menu close"></a>
+                        <div>HOME</div>
+                        <div class="">회사소개
+                            <div class="sub_menu">
+                                <a href="javascript:void(0)">인사말</a>
+                                <a href="javascript:void(0)">업무소개</a>
+                                <a href="javascript:void(0)">오시는길</a>
+                            </div>
+                        </div>
+                        <div>지원서비스</div>
+                        <div>문의</div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+
+        <!-- 슬라이더부분 -->
+        <section class="mv">
+            <!-- Swiper -->
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper-container mySwiper">
+                <!-- 메인 비주얼 이미지 하나만 사용 -->
+                <div class="parallax-bg" style="background-image: url(../ark/common/images/mv.png);" data-swiper-parallax="-23%"></div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class="text_area wrap">
+                        <div class="title mv_title" data-swiper-parallax="-300">
+                            <strong>ARK 회계 법인을 <br>찾아주셔서 감사합니다</strong><br>
+                        </div>
+                        <div class="subtitle mv_subText" data-swiper-parallax="-200">
+                            <span>ARK 회계 법인의 가장 큰 목표는 고객사와 함께 발맞춰 성장하는 것입니다. 새로운 시대를 선도하는 기업으로 성장해나가는 고객사들을 응원하며 함께 뛰는 러닝메이트가 되고자 합니다.</span>
+                        </div>
+                        <div class="text" data-swiper-parallax="-100">
+                            <a href="javasctipt:void(0)" class="btn border download">회사소개서 다운로드</a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="text_area wrap">
+                        <div class="title" data-swiper-parallax="-300">Slide 2</div>
+                        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                        <div class="text" data-swiper-parallax="-100">test2</div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="text_area wrap">
+                        <div class="title" data-swiper-parallax="-300">Slide 3</div>
+                        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                        <div class="text" data-swiper-parallax="-100">test3</div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- 슬라이더 생성 -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    speed: 600,
+                    parallax: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                });
+            </script>
+
+        </section>
+
+        <section class="intro">
+            <div class="wrap">
+                <div class="text_area">
+                    <p>
+                        <strong>법률, 노무, 특허 업무 전문가를 별도로 찾는 번거로움 없이 ARK 로</strong>
+                        <span>국내 1위 회계법인 출신의 회계사들로 구성 IT사업팀, 패션사업팀, 방송연예사업팀 등 각 산업에 특화된 회계사로 구성된 팀 운영 각 고객사 별로 담당 회계사가
+                            배정되어 직접 자문 변리사, 법무사, 변호사 및 은행과의 파트너십을 통해 고객사에게 관련 서비스 제공 세무기장부터 경영포괄자문까지 각 고객사 상황에 따른 맞춤형
+                            서비스 제공</span>
+                        <a href="javascript:void(0)" href="" class="btn fill primary">회사소개</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="service">
+            <p class="section_title">OUR SERVICE</p>
+            <div class="wrap">
+                <div class="layout_flex_around">
+                    <a class="service_box financial">
+                        <div class="text_area">
+                            <p>
+                                <strong>재무자문</strong>
+                                <span>국내 1위 회계법인 출신 회계사들로 구성</span>
+                            </p>
+                        </div>
+                    </a>
+                    <a class="service_box tax">
+                        <div class="text_area">
+                            <p>
+                                <strong>세무자문</strong>
+                                <span>각 산업에 특화된 회계사로 구성된 팀 운영</span>
+                            </p>
+                        </div>
+                    </a>
+                    <a class="service_box business">
+                        <div class="text_area">
+                            <p>
+                                <strong>경영자문</strong>
+                                <span>각 고객사 별 담당 회계사 배정</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="layout_flex_center">
+                    <a class="service_box law">
+                        <div class="text_area">
+                            <p>
+                                <strong>노무 · 법률자문</strong>
+                                <span>변리사, 법무사, 변호사 및 은행과의 파트너십을 통해 고객사에 관련서비스 제공</span>
+                            </p>
+                        </div>
+                    </a>
+
+                    <a class="service_box money">
+                        <div class="text_area">
+                            <p>
+                                <strong>자금조달전략수립</strong>
+                                <span>세무기장부터 경영포괄자문까지 각 고객사 상황에 따른 맞춤형 서비스 제공</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="layout_flex_center">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PC 하단슬라이더 -->
+        <section class="review swiperPC">
+            <div class="swiper-container mySwiper3 ">
+                <div class="swiper-wrapper wrap">
+        
+                    <!-- 슬라이더추가 -->
+                    <div class="swiper-slide review_box">
+                        <div class="review_header">
+                            <img src="common/images/ico_review.svg">
+                            <p>의류브랜드 J사</p>
+                        </div>
+                        <div class="review_cont">
+                            기장과 세무조정만 해주던 세무사무소는 직접 신경써야 하는것이 많았는데, 아크 회계 법인은 그때 그때 회사에 필요한 모든 업무를 대신 해주셔서 너무 편했습니다
+                        </div>
+                    </div>
+
+                    <!-- 슬라이더추가 -->
+                    <div class="swiper-slide review_box">
+                        <div class="review_header">
+                            <img src="common/images/ico_review.svg">
+                            <p>의류브랜드 J사</p>
+                        </div>
+                        <div class="review_cont">
+                            기장과 세무조정만 해주던 세무사무소는 직접 신경써야 하는것이 많았는데, 아크 회계 법인은 그때 그때 회사에 필요한 모든 업무를 대신 해주셔서 너무 편했습니다
+                        </div>
+                    </div>
+
+                    <!-- 슬라이더추가 -->
+                    <div class="swiper-slide review_box">
+                        <div class="review_header">
+                            <img src="common/images/ico_review.svg">
+                            <p>의류브랜드 J사</p>
+                        </div>
+                        <div class="review_cont">
+                            기장과 세무조정만 해주던 세무사무소는 직접 신경써야 하는것이 많았는데, 아크 회계 법인은 그때 그때 회사에 필요한 모든 업무를 대신 해주셔서 너무 편했습니다
+                        </div>
+                    </div>
+
+                    <!-- 슬라이더추가 -->
+                    <div class="swiper-slide review_box">
+                        <div class="review_header">
+                            <img src="common/images/ico_review.svg">
+                            <p>의류브랜드 J사</p>
+                        </div>
+                        <div class="review_cont">
+                            기장과 세무조정만 해주던 세무사무소는 직접 신경써야 하는것이 많았는데, 아크 회계 법인은 그때 그때 회사에 필요한 모든 업무를 대신 해주셔서 너무 편했습니다
+                        </div>
+                    </div>
+
+                    <!-- 슬라이더추가 -->
+                    <div class="swiper-slide review_box">
+                        <div class="review_header">
+                            <img src="common/images/ico_review.svg">
+                            <p>의류브랜드 J사</p>
+                        </div>
+                        <div class="review_cont">
+                            기장과 세무조정만 해주던 세무사무소는 직접 신경써야 하는것이 많았는데, 아크 회계 법인은 그때 그때 회사에 필요한 모든 업무를 대신 해주셔서 너무 편했습니다
+                        </div>
+                    </div>
+
+                    <!-- 슬라이더추가 -->
+                    <div class="swiper-slide review_box">
+                        <div class="review_header">
+                            <img src="common/images/ico_review.svg">
+                            <p>의류브랜드 J사</p>
+                        </div>
+                        <div class="review_cont">
+                            기장과 세무조정만 해주던 세무사무소는 직접 신경써야 하는것이 많았는데, 아크 회계 법인은 그때 그때 회사에 필요한 모든 업무를 대신 해주셔서 너무 편했습니다
+                        </div>
+                    </div>
+        
+        
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <!-- 모바일 하단슬라이더 -->
+        <section class="review swiperMobile">
+            <div class="swiper-container mySwiper4">
+                <div class="swiper-wrapper">
+        
+                    <!-- 슬라이더추가 -->
+                    <div class="swiper-slide review_box">
+                        <div class="review_header">
+                            <img src="common/images/ico_review.svg">
+                            <p>의류브랜드 J사</p>
+                        </div>
+                        <div class="review_cont">
+                            기장과 세무조정만 해주던 세무사무소는 직접 신경써야 하는것이 많았는데, 아크 회계 법인은 그때 그때 회사에 필요한 모든 업무를 대신 해주셔서 너무 편했습니다
+                        </div>
+                    </div>
+
+                    <!-- 슬라이더추가 -->
+                    <div class="swiper-slide review_box">
+                        <div class="review_header">
+                            <img src="common/images/ico_review.svg">
+                            <p>의류브랜드 J사</p>
+                        </div>
+                        <div class="review_cont">
+                            기장과 세무조정만 해주던 세무사무소는 직접 신경써야 하는것이 많았는데, 아크 회계 법인은 그때 그때 회사에 필요한 모든 업무를 대신 해주셔서 너무 편했습니다
+                        </div>
+                    </div>
+
+                    <!-- 슬라이더추가 -->
+                    <div class="swiper-slide review_box">
+                        <div class="review_header">
+                            <img src="common/images/ico_review.svg">
+                            <p>의류브랜드 J사</p>
+                        </div>
+                        <div class="review_cont">
+                            기장과 세무조정만 해주던 세무사무소는 직접 신경써야 하는것이 많았는데, 아크 회계 법인은 그때 그때 회사에 필요한 모든 업무를 대신 해주셔서 너무 편했습니다
+                        </div>
+                    </div>
+
+                    <!-- 슬라이더추가 -->
+                    <div class="swiper-slide review_box">
+                        <div class="review_header">
+                            <img src="common/images/ico_review.svg">
+                            <p>의류브랜드 J사</p>
+                        </div>
+                        <div class="review_cont">
+                            기장과 세무조정만 해주던 세무사무소는 직접 신경써야 하는것이 많았는데, 아크 회계 법인은 그때 그때 회사에 필요한 모든 업무를 대신 해주셔서 너무 편했습니다
+                        </div>
+                    </div>
+
+                    <!-- 슬라이더추가 -->
+                    <div class="swiper-slide review_box">
+                        <div class="review_header">
+                            <img src="common/images/ico_review.svg">
+                            <p>의류브랜드 J사</p>
+                        </div>
+                        <div class="review_cont">
+                            기장과 세무조정만 해주던 세무사무소는 직접 신경써야 하는것이 많았는데, 아크 회계 법인은 그때 그때 회사에 필요한 모든 업무를 대신 해주셔서 너무 편했습니다
+                        </div>
+                    </div>
+
+                    <!-- 슬라이더추가 -->
+                    <div class="swiper-slide review_box">
+                        <div class="review_header">
+                            <img src="common/images/ico_review.svg">
+                            <p>의류브랜드 J사</p>
+                        </div>
+                        <div class="review_cont">
+                            기장과 세무조정만 해주던 세무사무소는 직접 신경써야 하는것이 많았는데, 아크 회계 법인은 그때 그때 회사에 필요한 모든 업무를 대신 해주셔서 너무 편했습니다
+                        </div>
+                    </div>
+        
+        
+                </div>
+            </div>
+        </section>
+
+        <script>
+            var swiper3 = new Swiper(".mySwiper3", {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+            });
+
+            var swiper4 = new Swiper(".mySwiper4", {
+              slidesPerView: 1,
+              spaceBetween: 30,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+            });
+          </script>
+
+        <section class="contact">
+            <div class="wrap">
+                <div class="form">
+                    <p>무엇이든 아크에게 편하게 문의하세요!</p>
+                    <div class="contact_area">
+                        <strong>contact</strong>
+                        <p>E-mail: taxpeople@taxpeople.kr</p>
+                        <p>Phone: 02-2088-4860</p>
+                        <p>서울시 성동구 왕십리로 16가길 12 2층</p>
+                    </div>
+                    <div class="btn_area">
+                        <a href="" class="btn chat">채널톡 채팅문의</a>
+                        <a href="" class="btn download border">회사소개서 다운로드</a>
+                    </div>
+                </div>
+                
+                <div class="map">
+                    <!-- <div id="map" style="width:100%;height:100%;"></div> -->
+                </div>
+
+                <div id="map" style="width:100%;height:100%;"></div>
+                <!-- <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=df6fd3294f6e4c00960928e623927095"></script> -->
+                <script src="sdk.js"></script>
+
+                <script>
+
+                    $(function () {
+                        fn_Map();
+                    });
+
+                    function fn_Map() {
+                        var markers = [
+                            {
+                                position: new kakao.maps.LatLng(37.5504480, 127.0449278),
+                                text: 'ARK|회계법인' // text 옵션을 설정하면 마커 위에 텍스트를 함께 표시할 수 있습니다     
+                            }
+                        ];
+
+                        var staticMapContainer = document.getElementById('map'), // 이미지 지도를 표시할 div  
+                            staticMapOption = {
+                                center: new kakao.maps.LatLng(37.5504480, 127.0449278), // 이미지 지도의 중심좌표
+                                level: 4, // 이미지 지도의 확대 레벨
+                                marker: markers // 이미지 지도에 표시할 마커 
+                            };
+
+                        // 이미지 지도를 생성합니다
+                        new kakao.maps.StaticMap(staticMapContainer, staticMapOption);
+                    }
+
+
+                </script>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="wrap">
+            <h3 class="footer_logo"><img src="common/images/logo.svg" /></h3>
+            <div class="footer_wrap d-flex justify-content-start align-item-center">
+                <div class="address">
+                    <p>
+                        서울시 성동구 왕십리로 16가길 12 2층<br>
+                        2F, 12, Wangsimni-ro 16ga-gil, Seongdong-gu, Seoul, Republic of Korea<br>
+                        대표: 최진호​<br>
+                        사업자번호: 896-72-00261
+                    </p>
+                    <small>Copyright (c) 2021 ARK. All Right Reserved.</small>
+                </div>
+                <div class="call">
+                    <strong>CONTACT</strong>
+                    <p>
+                        E-mail: taxpeople@taxpeople.kr<br>
+                        <a href="tel:02-2088-4860">Phone: 02-2088-4860</a><br>
+                        Fax: 0507-0303-5049<br>
+                        Monday - Friday: 10am - 6pm​​<br>
+                        Saturday - Sunday: Closed
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a class="top_btn" href="#"></a>
+</body>
+
+</html>
