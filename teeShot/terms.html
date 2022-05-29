@@ -12,18 +12,34 @@
     <script type="text/javascript" src="js/common.js"></script>
     <title>terms</title>
 </head>
+<script>
+    function scrollHeader() {
+        $(window).scroll(function () {
+            var navbar = $(this).scrollTop();
+            var $header = $('header');
+            if (navbar) {
+                $header.addClass('active');
+            } else {
+                $header.removeClass('active');
+            }
+
+        })
+    };
+</script>
 
 <body data="sub">
     <header class="sub_header">
-        <h1 class="logo"></h1>
-        <div class="mobile_nav">
-            <p id="select_menu"><a href="#">이용약관</a>
-            <ul class="sub_tab">
-                <li class="on"><a href="#">이용약관</a></li>
-                <li><a href="#">개인정보처리방침</a></li>
-                <li><a href="#">위치기반서비스 이용약관</a></li>
-            </ul>
-            </p>
+        <div class="wrap">
+            <h1 class="logo"></h1>
+            <div class="mobile_nav">
+                <p id="select_menu"><a href="#">이용약관</a>
+                <ul class="sub_tab">
+                    <li class="on"><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">위치기반서비스 이용약관</a></li>
+                </ul>
+                </p>
+            </div>
         </div>
     </header>
     <div class="dismiss"></div>

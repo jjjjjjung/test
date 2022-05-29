@@ -1,31 +1,10 @@
 $(document).ready(function () {
-    scrollHeader();
     scrollIcon();
     tabNav();
     mobileNav();
 
 });
-var mobile = 769 >= window.innerWidth
-function scrollHeader() {
-    $(window).scroll(function () {
-        var navbar = $(this).scrollTop();
-        var $header = $('header');
-        if (!mobile) {
-            if (navbar > (window.innerHeight - 140)) {
-                $header.addClass('active');
-            } else {
-                $header.removeClass('active');
-            }
-        } else {
-            if (navbar > (window.innerHeight - 80)) {
-                $header.addClass('active');
-            } else {
-                $header.removeClass('active');
-            }
-        }
 
-    })
-};
 
 function scrollIcon(params) {
     $(".icon-scroll").click(function (event) {
