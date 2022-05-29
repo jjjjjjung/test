@@ -67,7 +67,7 @@ function mobileNav(params) {
         let num = $(".sub_tab li a").index($(this));
 
         $('#select_menu a').text($(this).text());
-
+        $('.dismiss').removeClass('on')
 
         // 기존에 적용되어 있는 on class 삭제
         $('.sub_tab').removeClass('active')
