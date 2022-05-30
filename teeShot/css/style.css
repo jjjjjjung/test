@@ -47,6 +47,7 @@ header {
 }
 
 header .logo {
+    display: inline-block;
     width: 200px;
     height: 48px;
     background-image: url('../images/logo-gnb.svg');
@@ -86,9 +87,7 @@ header.active .app_btn a:first-child {
     background-position:center top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: calc(100vh - 153px);
-    width: 100%;
-    padding: 153px 0 0;
+    height: 100vh;
     position: relative;
 }
 
@@ -98,11 +97,13 @@ header.active .app_btn a:first-child {
     padding: 0 30px
 }
 
-.mv_cont {
+/* .mv_cont {
+    max-width: 964px;
+    margin: 0 auto;
+    padding: 0 30px;
     width: 100%;
     height: calc(100vh - 153px);
     display: flex;
-    
     display: -ms-flexbox;
     justify-content: space-between;
     -webkit-box-pack: justify;
@@ -110,14 +111,32 @@ header.active .app_btn a:first-child {
     align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
+} */
+
+.mv_cont{
+    padding: 0 30px;
+    height: 100vh;
 }
 
 .mv_cont .cont_txt {
     width: 48%;
     color: #fff;
-    vertical-align: middle;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-60%) translateY(-50%);
+    top: 50%;
 
 }
+
+/* .cont_txt::after{
+    content:'';
+    position: absolute;
+    display: block;
+    background:url('../images/img-keyvisual-phone.png') no-repeat right bottom;
+    width:50%;
+    height:100%;
+    background-size:cover;
+} */
 
 .mv_cont .cont_txt h3 {
     font-size: 60px;
@@ -163,12 +182,15 @@ header.active .app_btn a:first-child {
 }
 
 .mv_cont .cont_img {
-    width: 55%;
-    background-image: url('../images/img-keyvisual-phone.png');
+    width: 50%;
+    position: absolute;
+    right:0;
+    bottom:0;
+    background-image: url(../images/img-keyvisual-phone.png);
     background-repeat: no-repeat;
-    background-position:right bottom ;
-    background-size: 100%;
-    height: 100%;
+    background-position: left bottom;
+    background-size: contain;
+    height: 90%;
 }
 
 .icon-scroll {
@@ -518,6 +540,7 @@ footer .copyRight {
 }
 
 [data='sub'] .sub_header .logo {
+    display: inline-block;
     background-repeat:  no-repeat;
     background-image: url('../images/logo-service.svg');
     background-position: left center ;
@@ -639,12 +662,16 @@ footer .copyRight {
 .terms .table .th{
     border-bottom:1px solid #ddd;
 }
-@media all and (min-width: 769px) and (max-width:1024px) {
+@media all and (min-width: 768px) and (max-width:1024px) {
     .wrap {
         max-width: 100%;
         padding: 0 30px;
     }
-
+    .mv_cont .cont_txt{
+        left:30px;
+        transform: translateX(0) translateY(-50%);
+    }
+    
     .mv_cont .cont_txt h3 {
         font-size: 44px;
         line-height: 1.3;
@@ -768,7 +795,7 @@ footer .copyRight {
 
 }
 
-@media all and (max-width:768px) {
+@media all and (max-width:767px) {
     header {
         padding: 0 20px;
     }
@@ -813,34 +840,23 @@ footer .copyRight {
     /* main */
     .mv {
         background-size: cover;
-        height: calc(100vh - 50px);
-        padding: 50px 0 0 0;
+        height: 100vh;
+        padding: 0;
     }
 
     .mv_cont {
-        width: 100%;
-        height: calc(100vh - 100px);
-        display: flex;
-        
-        display: -ms-flexbox;
-        justify-content: flex-start;
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        align-items: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        flex-direction: column;
-        -webkit-box-orient: vertical;
-         -ms-flex-direction: column;
-        flex-wrap: nowrap;
-        -webkit-box-lines: multiple;
-        -ms-flex-wrap: wrap;
-        margin-top: 50px;
-        position: relative;
+        padding:0 30px;
+        height: 100vh;
     }
 
     .mv_cont .cont_txt {
+        left: 0;
+        transform: translate(0, 0);
+        top: 50px;
+        position: relative;
+        height: calc(100vh - 50px);
         width: 100%;
+        z-index: 1
     }
 
     .mv_cont .cont_txt h3 {
@@ -855,8 +871,7 @@ footer .copyRight {
     .mv_cont .mobile_app {
         position: absolute;
         bottom: 70px;
-        left: 0;
-        right: 0;
+        width:100%;
     }
 
     .mv_cont .mobile_app a {
@@ -865,8 +880,8 @@ footer .copyRight {
 
     .mv_cont .cont_img {
         width: 100%;
-        background-position: left top;
-        background-size: cover;
+        background-position: left 50px bottom -50px;
+        background-size: contain;
         
     }
 
@@ -1163,3 +1178,18 @@ footer .copyRight {
     }
 
 }
+/* @media all and (min-width:426px) and (max-width:768px){
+    .mv_cont .cont_txt{
+        width: 48%;
+        color: #fff;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-60%) translateY(-50%);
+        top: 50%;
+    }
+    .mv_cont .cont_img{
+        width: 50%;
+        background-position: left bottom;
+        background-size: contain;
+    }
+} */
