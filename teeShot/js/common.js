@@ -2,13 +2,13 @@ $(document).ready(function () {
     scrollIcon();
     tabNav();
     mobileNav();
-    checkMobile(navigator.userAgent);
+    checkMobile();
 
 });
-function checkMobile(type) {
+function checkMobile() {
     $('.mobile_app a').on('click', function (event) {
         event.preventDefault();
-        var type = type.toLowerCase()
+        var type = navigator.userAgent.toLowerCase()
         if (type.indexOf('android') > -1) {
             //안드로이드
             return "https://play.google.com/store/apps/details?id=kr.co.teeshot.app";
