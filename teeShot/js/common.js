@@ -13,9 +13,9 @@ function checkMobile() {
         if (type.indexOf('android') > -1) {
             //안드로이드
             return "https://play.google.com/store/apps/details?id=kr.co.teeshot.app";
-        } else if (type.indexOf("iphone") > -1 || type.indexOf("ipad") > -1 || type.indexOf("ipod") > -1) {
+        } else if (type.indexOf("iphone") || type.indexOf("ipad") || type.indexOf("ipod")) {
             //IOS
-            return "https://apps.apple.com/kr/app/id1092007968";
+            window.open("https://apps.apple.com/kr/app/id1092007968");
         } else {
             //아이폰, 안드로이드 외
             return alert('모바일 기기를 이용해주세요');
