@@ -14,26 +14,24 @@
 </head>
 <script>
     var mobile = 769 >= window.innerWidth;
-    function scrollHeader() {
-        $(window).scroll(function () {
-            var navbar = $(this).scrollTop();
-            var $header = $('header');
-            if (!mobile) {
-                if (navbar > (window.innerHeight - 140)) {
-                    $header.addClass('active');
-                } else {
-                    $header.removeClass('active');
-                }
+    $(window).scroll(function () {
+        var navbar = $(this).scrollTop();
+        var $header = $('header');
+        if (!mobile) {
+            if (navbar > (window.innerHeight - 140)) {
+                $header.addClass('active');
             } else {
-                if (navbar > (window.innerHeight - 80)) {
-                    $header.addClass('active');
-                } else {
-                    $header.removeClass('active');
-                }
+                $header.removeClass('active');
             }
+        } else {
+            if (navbar > (window.innerHeight - 80)) {
+                $header.addClass('active');
+            } else {
+                $header.removeClass('active');
+            }
+        }
 
-        })
-    };
+    })
 </script>
 
 <body>
@@ -200,7 +198,7 @@
                                 골프친구를 사귀거나 골프조인에도 도움이 됩니다.
                             </p>
                         </div>
-                        <img src="images/friendmake-1.png">
+                        <div class="service_img"><img src="images/friendmake-1.png"></div>
                     </div>
                     <div class="second step_cont">
                         <div class="step_text">
@@ -209,9 +207,9 @@
                                 매일 20명씩 골프 친구를 추천해 드리고 있습니다.<br>
                                 추천 받은 회원의 프로필을 확인하고 마음에 드는<br>
                                 회원에게 <span class="important">친구요청을 하거나 채팅을 통해</span>서<br>
-                                대화를 나누어 보세요.</p>
+                                대화를 나누어 보세요.<br><br></p>
                         </div>
-                        <img src="images/friendmake-2.png">
+                        <div class="service_img"><img src="images/friendmake-2.png"></div>
                     </div>
                 </div>
                 <div class="friend">
@@ -220,10 +218,10 @@
                             <h5 class="step_ttl">프로필 확인하고, 대화 나누기</h5>
                             <p>추천 받은 회원들의 프로필을 확인하고<br>
                                 <span class="important">마음에 드는 회원과 인사</span>를 하고<br>
-                                대화를 나누며 친구가 되어 보세요.
+                                대화를 나누며 친구가 되어 보세요.<br><br>
                             </p>
                         </div>
-                        <img src="images/friendmake-3.png">
+                        <div class="service_img"><img src="images/friendmake-3.png"></div>
                     </div>
                     <div class="fourth step_cont">
                         <div class="step_text">
@@ -233,7 +231,7 @@
                                 확인해 볼 수 있습니다. 검색한 회원 중 마음에 <br>
                                 드는 회원에게 친구 요청이나 대화를 걸어보세요.</p>
                         </div>
-                        <img src="images/friendmake-4.png">
+                        <div class="service_img"><img src="images/friendmake-4.png"></div>
                     </div>
                 </div>
             </div>
