@@ -1230,18 +1230,10 @@ footer .copyRight {
 
 }
 
-/* @media all and (min-width:426px) and (max-width:768px){
-    .mv_cont .cont_txt{
-        width: 48%;
-        color: #fff;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-60%) translateY(-50%);
-        top: 50%;
+@media all and (min-width:1921px) {
+    .mv_cont .cont_txt {
+
+        transform: translate(-50);
     }
-    .mv_cont .cont_img{
-        width: 50%;
-        background-position: left bottom;
-        background-size: contain;
-    }
-} */
+
+}
