@@ -8,7 +8,7 @@ $(document).ready(function () {
 function checkMobile(type) {
     $('.mobile_app a').on('click', function (event) {
         event.preventDefault();
-        let type = type.toLowerCase()
+        var type = type.toLowerCase()
         if (type.indexOf('android') > -1) {
             //안드로이드
             return "https://play.google.com/store/apps/details?id=kr.co.teeshot.app";
