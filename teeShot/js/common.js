@@ -2,9 +2,27 @@ $(document).ready(function () {
     scrollIcon();
     tabNav();
     mobileNav();
+    checkMobile(navigator.userAgent);
 
 });
+function checkMobile(type) {
+    $('.mobile_app a').on('click', function (event) {
+        event.preventDefault();
+        if (type.indexOf('android') > -1) {
+            //안드로이드
+            return "https://play.google.com/store/apps/details?id=kr.co.teeshot.app";
+        } else if (type.indexOf("iphone") > -1 || type.indexOf("ipad") > -1 || type.indexOf("ipod") > -1) {
+            //IOS
+            return "https://apps.apple.com/kr/app/id1092007968";
+        } else {
+            //아이폰, 안드로이드 외
+            return alert('모바일 기기를 이용해주세요');
+        }
 
+
+    })
+
+}
 
 function scrollIcon(params) {
     $(".icon-scroll").on('click', function (event) {
