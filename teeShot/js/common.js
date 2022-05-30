@@ -7,7 +7,9 @@ $(document).ready(function () {
 
 
 function scrollIcon(params) {
-    $(".icon-scroll").click(function (event) {
+    $(".icon-scroll").on('click', function (event) {
+        var mobile = 640 >= window.innerWidth;
+
         event.preventDefault();
         if (!mobile) {
             $('html,body').animate({ scrollTop: $(this.hash).offset().top - 180 }, 500);

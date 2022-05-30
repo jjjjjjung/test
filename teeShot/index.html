@@ -13,8 +13,8 @@
     <title>teeShot</title>
 </head>
 <script>
-    var mobile = 640 >= window.innerWidth;
     $(window).scroll(function () {
+        var mobile = 640 >= window.innerWidth;
         var navbar = $(this).scrollTop();
         var $header = $('header');
         if (!mobile) {
