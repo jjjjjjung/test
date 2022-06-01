@@ -3,6 +3,9 @@ $(document).ready(function () {
     tabNav();
     mobileNav();
     checkMobile();
+    let vh = window.innerHeight * 0.01;
+
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
 
 });
 function checkMobile() {
@@ -12,9 +15,13 @@ function checkMobile() {
         console.log(type);
         if (type.indexOf('android') > -1) {
             //안드로이드
+            $('.mobile_app a').removeClass('ios')
+            $('.mobile_app a').addClass('android')
             return "https://play.google.com/store/apps/details?id=kr.co.teeshot.app";
         } else if (type.indexOf("iphone") || type.indexOf("ipad") || type.indexOf("ipod")) {
             //IOS
+            $('.mobile_app a').addClass('ios')
+            $('.mobile_app a').removeClass('android')
             window.open("https://apps.apple.com/kr/app/id1092007968");
         } else {
             //아이폰, 안드로이드 외
