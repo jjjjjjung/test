@@ -95,7 +95,6 @@ header.active .app_btn a:first-child {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     position: relative;
 }
@@ -931,13 +930,13 @@ footer .copyRight {
     /* main */
     .mv {
         background-size: cover;
-        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
         padding: 0;
     }
 
     .mv_cont {
         padding: 0 30px;
-        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
     }
 
     .mv_cont .cont_txt {
