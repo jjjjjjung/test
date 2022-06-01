@@ -918,30 +918,48 @@ footer .copyRight {
 
 
     /* main */
-    .contents .mobile_app a.android {
-        background: #000 url('../images/icon-sotor-google.svg') no-repeat left 100px center;
-        background-size: 24px;
-        padding-left: 140px;
-        text-align: left
+    .contents .mobile_app a {
+        position: relative;
+        padding-left: 36px;
+        background-color: #000;
     }
 
-    .contents .mobile_app a.ios {
-        background: #000 url('../images/icon-sotor-apple.svg') no-repeat left 100px center;
-        background-size: 28px;
-        padding-left: 140px;
-        text-align: left;
-    }
 
     .contents .mobile_app {
         position: absolute;
         bottom: 67px;
         left: 20px;
         right: 20px;
+        z-index: 3
     }
 
     .contents .mobile_app a {
         padding: 16px;
     }
+
+    .contents .mobile_app a::before {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 50%;
+        transform: translateX(-250%);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 28px;
+        height: 28px;
+        display: block;
+    }
+
+    .contents .mobile_app a.android::before {
+        background-image: url('../images/icon-sotor-google.svg');
+    }
+
+    .contents .mobile_app a.ios::before {
+        background-image: url('../images/icon-sotor-apple.svg');
+    }
+
+
 
     .mv {
         background-size: cover;
