@@ -95,6 +95,7 @@ header.active .app_btn a:first-child {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     position: relative;
 }

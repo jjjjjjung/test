@@ -1,21 +1,17 @@
 $(document).ready(function () {
-    innerHeight();
     scrollIcon();
     tabNav();
     mobileNav();
     checkMobile();
+    resize();
+    window.addEventListener('resize', resize)
+    window.addEventListener('load', resize)
 
 
 });
-function innerHeight() {
+function resize() {
     let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-
-    //resize
-    window.addEventListener('resize', function () {
-        let vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty("--vh", `${vh}px`);
-    })
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
     console.log(vh)
 }
 function checkMobile() {
