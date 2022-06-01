@@ -889,7 +889,7 @@ footer .copyRight {
     }
 
     header.active .mobile_app,
-    .mv_cont .mobile_app {
+    .contents .mobile_app {
         display: block;
     }
 
@@ -914,6 +914,10 @@ footer .copyRight {
         background-size: 15%;
     }
 
+
+
+
+    /* main */
     .contents .mobile_app a.android {
         background: #000 url('../images/icon-sotor-google.svg') no-repeat left 100px center;
         background-size: 24px;
@@ -928,7 +932,17 @@ footer .copyRight {
         text-align: left;
     }
 
-    /* main */
+    .contents .mobile_app {
+        position: absolute;
+        bottom: 67px;
+        left: 20px;
+        right: 20px;
+    }
+
+    .contents .mobile_app a {
+        padding: 16px;
+    }
+
     .mv {
         background-size: cover;
         height: calc(var(--vh, 1vh) * 100);
@@ -959,15 +973,6 @@ footer .copyRight {
         margin-top: 10px;
     }
 
-    .mv_cont .mobile_app {
-        position: absolute;
-        bottom: 67px;
-        width: 100%;
-    }
-
-    .mv_cont .mobile_app a {
-        padding: 16px;
-    }
 
     .mv_cont .cont_img {
         width: 100%;
