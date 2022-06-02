@@ -914,7 +914,9 @@ footer .copyRight {
         background-size: 15%;
     }
 
-
+    [data='sub'] .sub_header .logo{
+        background-size: auto;
+    }
 
 
     /* main */
