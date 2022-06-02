@@ -903,7 +903,7 @@ footer .copyRight {
         display: block;
         font-size: 14px;
     }
-
+   
     header .mobile_app a.android {
         background: #000 url('../images/icon-sotor-google.svg') no-repeat left 14px center;
         background-size: 15%;
@@ -922,8 +922,9 @@ footer .copyRight {
     /* main */
     .contents .mobile_app a {
         position: relative;
-        padding-left: 36px;
         background-color: #000;
+        padding:14px 0 14px 36px;
+        font-size: 20px;
     }
 
 
@@ -935,16 +936,13 @@ footer .copyRight {
         z-index: 3
     }
 
-    .contents .mobile_app a {
-        padding: 16px;
-    }
 
     .contents .mobile_app a::before {
         content: '';
         position: absolute;
-        top: 7px;
+        top: 50%;
         left: 50%;
-        transform: translateX(-250%);
+        transform: translate(-250%, -50%);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -997,7 +995,7 @@ footer .copyRight {
     .mv_cont .cont_img {
         width: 100%;
         background-position: left 50px bottom;
-        background-size: contain;
+        background-size: 110%;
 
     }
 
@@ -1058,7 +1056,9 @@ footer .copyRight {
         line-height: 2;
     }
 
-    .premium>li {}
+    .premium>li {
+        line-height: 26px;
+    }
 
     .bg_green {
         margin-top: 110px;
