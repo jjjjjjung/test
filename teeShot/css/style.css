@@ -202,8 +202,8 @@ header.active .app_btn a:first-child {
     background-image: url(../images/img-keyvisual-phone.png);
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size: contain;
-    height: 90%;
+    background-size: 580px;
+    height: 100%;
 }
 
 .icon-scroll {
@@ -1317,4 +1317,10 @@ footer .copyRight {
         height: 80%;
     }
 
+}
+@media all and (max-height:720px){
+    .mv_cont .cont_img {
+        background-size: contain;
+        height: 90%;
+    }
 }
