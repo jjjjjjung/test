@@ -23,7 +23,7 @@ function checkMobile() {
         $('.mobile_app a').removeClass('ios')
         $('.mobile_app a').on('click', function (event) {
             event.preventDefault();
-            return "https://play.google.com/store/apps/details?id=kr.co.teeshot.app";
+            window.open("https://play.google.com/store/apps/details?id=kr.co.teeshot.app");
         })
     } else if (type.indexOf("iphone") || type.indexOf("ipad") || type.indexOf("ipod")) {
         //IOS
