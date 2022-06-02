@@ -106,46 +106,23 @@ header.active .app_btn a:first-child {
     padding: 0 30px
 }
 
-/* .mv_cont {
-    max-width: 964px;
-    margin: 0 auto;
-    padding: 0 30px;
-    width: 100%;
-    height: calc(100vh - 153px);
-    display: flex;
-    display: -ms-flexbox;
-    justify-content: space-between;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-} */
 
 .mv_cont {
     padding: 0 30px;
     height: 100vh;
+    max-width: 964px;
+    margin: 0 auto;
 }
 
 .mv_cont .cont_txt {
     width: 48%;
     color: #fff;
     position: absolute;
-    left: 50%;
-    transform: translate(-80%, -50%);
+   
+    transform: translateY(-50%);
     top: 50%;
 
 }
-
-/* .cont_txt::after{
-    content:'';
-    position: absolute;
-    display: block;
-    background:url('../images/img-keyvisual-phone.png') no-repeat right bottom;
-    width:50%;
-    height:100%;
-    background-size:cover;
-} */
 
 .mv_cont .cont_txt h3 {
     font-size: 60px;
@@ -202,8 +179,8 @@ header.active .app_btn a:first-child {
     background-image: url(../images/img-keyvisual-phone.png);
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size: 580px;
-    height: 100%;
+    background-size: contain;
+    height: 90%;
 }
 
 .icon-scroll {
@@ -278,29 +255,7 @@ header.active .app_btn a:first-child {
     width: 100%;
 }
 
-/* .premium>li {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left center;
-    line-height: 1.5;
-    padding-left: 100px;
-    margin-bottom: 30px;
-    vertical-align: middle;
-}
 
-.premium_a {
-    background-image: url('../images/icon-premium-a.svg');
-}
-
-.premium_b {
-    background-image: url('../images/icon-premium-b.svg');
-
-}
-
-.premium_c {
-    background-image: url('../images/icon-premium-c.svg');
-
-} */
 
 /* 친구 만들기 */
 .bg_green {
@@ -419,7 +374,7 @@ header.active .app_btn a:first-child {
 
 .service_img {
     display: table-cell;
-    width: calc(400px - 40px);
+    /* width: calc(400px - 40px); */
     padding: 0 20px;
 }
 
@@ -719,8 +674,17 @@ footer .copyRight {
 .terms .table .th {
     border-bottom: 1px solid #ddd;
 }
-
-@media all and (min-width: 768px) and (max-width:1024px) {
+@media all and (min-width: 1024px) and (max-width:1280px) {
+    .mv_cont .cont_img{
+        background-size: cover;
+        height: 90%;
+    }
+    .mv_cont .cont_txt{
+        left: 30px;
+        transform: translateY(-50%);
+    }
+}
+@media all and (min-width: 768px) and (max-width:1023px) {
     .wrap {
         max-width: 100%;
         padding: 0 30px;
@@ -748,8 +712,9 @@ footer .copyRight {
 
     .mv_cont .cont_img {
         background-size: cover;
-        background-position: left bottom;
+        background-position: left 100px bottom;
         width: 60%;
+        height: 90%;
     }
 
     .mv_cont .app_btn {
@@ -762,7 +727,6 @@ footer .copyRight {
 
     /* 서비스소개 */
     .service_list>li {
-        justify-content: space-evenly;
         margin-top: 200px;
     }
 
@@ -781,7 +745,8 @@ footer .copyRight {
     }
 
     .content_txt sub {
-        font-size: 17px;
+        font-size: 16px;
+        line-height: 1.8;
     }
 
     .bg_green {
@@ -1306,7 +1271,7 @@ footer .copyRight {
 
 }
 
-@media all and (min-width:1921px) {
+/* @media all and (min-width:1921px) {
     .mv_cont .cont_txt {
         top: 40%;
         transform: translate(-50%);
@@ -1317,7 +1282,7 @@ footer .copyRight {
         height: 80%;
     }
 
-}
+} */
 @media all and (max-height:720px){
     .mv_cont .cont_img {
         background-size: contain;
