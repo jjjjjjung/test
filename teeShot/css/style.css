@@ -202,7 +202,7 @@ header.active .app_btn a:first-child {
     background-image: url(../images/img-keyvisual-phone.png);
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size: cover;
+    background-size: contain;
     height: 90%;
 }
 
@@ -570,7 +570,7 @@ footer .copyRight {
 
 /* 약관 */
 [data='sub'] .sub_header {
-    padding: 16px 0 0;
+    /* padding: 16px 0 0; */
 }
 
 [data='sub'] .sub_header.active {
