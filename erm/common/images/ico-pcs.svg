@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="타원_8" data-name="타원 8" cx="14" cy="14" r="14" transform="translate(1440 152)" fill="#131b24"/>
+    </clipPath>
+  </defs>
+  <g id="ico-pcs" transform="translate(-1440 -152)">
+    <circle id="타원_4" data-name="타원 4" cx="19" cy="19" r="19" transform="translate(1440 152)" fill="#131b24"/>
+    <g id="마스크_그룹_23" data-name="마스크 그룹 23" transform="translate(5 5)" clip-path="url(#clip-path)">
+      <g id="Layer_2" data-name="Layer 2" transform="translate(1440 152)">
+        <g id="invisible_box" data-name="invisible box">
+          <rect id="사각형_358" data-name="사각형 358" width="28" height="28" fill="none"/>
+        </g>
+        <g id="Q3_icons" data-name="Q3 icons" transform="translate(2.042 2.808)">
+          <path id="패스_471" data-name="패스 471" d="M18.337,1.167H5.578a.911.911,0,0,0-.911.911V20.306a.911.911,0,0,0,.911.911H18.337a.911.911,0,0,0,.911-.911V2.078A.911.911,0,0,0,18.337,1.167Zm-6.38,16.4A1.367,1.367,0,1,1,13.325,16.2a1.321,1.321,0,0,1-1.367,1.367ZM15.6,12.1H8.312V10.28H15.6Zm0-2.734H8.312V7.546H15.6Zm0-2.734H8.312V4.812H15.6Z" fill="#354250"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="타원_10" data-name="타원 10" cx="14" cy="14" r="14" transform="translate(184 772)" fill="#131b24"/>
+    </clipPath>
+  </defs>
+  <g id="ico-manage" transform="translate(-184 -772)">
+    <circle id="타원_3" data-name="타원 3" cx="19" cy="19" r="19" transform="translate(184 772)" fill="#131b24"/>
+    <g id="마스크_그룹_22" data-name="마스크 그룹 22" transform="translate(5 5)" clip-path="url(#clip-path)">
+      <g id="Layer_2" data-name="Layer 2" transform="translate(184 772)">
+        <g id="invisible_box" data-name="invisible box">
+          <rect id="사각형_355" data-name="사각형 355" width="28" height="28" fill="none"/>
+          <rect id="사각형_356" data-name="사각형 356" width="28" height="28" fill="none"/>
+          <rect id="사각형_357" data-name="사각형 357" width="28" height="28" fill="none"/>
+        </g>
+        <g id="icons_Q2" data-name="icons Q2">
+          <path id="패스_470" data-name="패스 470" d="M23.45,17.033l3.208-.875a13.417,13.417,0,0,0,0-4.317l-3.208-.875a1.05,1.05,0,0,1-.642-1.517l1.633-2.917a12.017,12.017,0,0,0-2.975-2.975L18.55,5.192l-.467.117a1.05,1.05,0,0,1-1.05-.758l-.875-3.208a13.417,13.417,0,0,0-4.317,0L10.967,4.55a1.05,1.05,0,0,1-1.05.758L9.45,5.192,6.533,3.558A12.017,12.017,0,0,0,3.558,6.533L5.192,9.45a1.05,1.05,0,0,1-.642,1.517l-3.208.875a13.417,13.417,0,0,0,0,4.317l3.208.875a1.05,1.05,0,0,1,.642,1.517L3.558,21.467a12.017,12.017,0,0,0,2.975,2.975L9.45,22.808l.467-.117a1.05,1.05,0,0,1,1.05.758l.875,3.208a13.417,13.417,0,0,0,4.317,0l.875-3.208a1.05,1.05,0,0,1,1.05-.758l.467.117,2.917,1.633a12.017,12.017,0,0,0,2.975-2.975L22.808,18.55a1.05,1.05,0,0,1,.642-1.517ZM14,19.25A5.25,5.25,0,1,1,19.25,14,5.25,5.25,0,0,1,14,19.25Z" fill="#354250"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

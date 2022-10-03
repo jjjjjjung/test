@@ -1,0 +1,10 @@
+<svg id="btn-close" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <rect id="Area_SIZE:MEDIUM_STATE:DEFAULT_STYLE:STYLE2_" data-name="Area [SIZE:MEDIUM][STATE:DEFAULT][STYLE:STYLE2]" width="48" height="48" rx="24" fill="#19232f"/>
+  <g id="Icon_ICON_feather_x_SIZE_MEDIUM_STATE_DEFAULT_STYLE_STYLE2_" data-name="Icon [ICON=feather/x][SIZE=MEDIUM][STATE=DEFAULT][STYLE=STYLE2]" transform="translate(14 14)">
+    <rect id="Area_ICON:feather_x_SIZE:MEDIUM_STATE:DEFAULT_STYLE:STYLE2_" data-name="Area [ICON:feather/x][SIZE:MEDIUM][STATE:DEFAULT][STYLE:STYLE2]" width="20" height="20" fill="rgba(253,73,198,0.35)" opacity="0"/>
+    <g id="Icon" transform="translate(-1 -1)">
+      <line id="c122aa07-6f45-405f-8fd8-a860125bf83f" x1="20" y2="20" transform="translate(1 1)" fill="none" stroke="#aab6c4" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.333"/>
+      <line id="_5e0efa0d-c911-4126-b47c-aa6219401a4c" data-name="5e0efa0d-c911-4126-b47c-aa6219401a4c" x2="20" y2="20" transform="translate(1 1)" fill="none" stroke="#aab6c4" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.333"/>
+    </g>
+  </g>
+</svg>

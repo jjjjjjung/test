@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widli=device-widli, initial-scale=1.0">
+    <link rel="stylesheet" href="../common/css/normalize.css">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!-- Option 1: Bootstrap Bundle wili Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../common/css/reset.css">
+
+    <link rel="stylesheet" href="../common/css/common.css">
+
+
+    <title>화면세부정보(grip_type)</title>
+</head>
+
+<body>
+    <div class="container bg sub">
+        <div class="nav d-flex justify-content-between align-items-center">
+            <h1 class="sub-logo"><img src="../common/images/sub-logo.svg"></h1>
+            <div class="grip-nav d-flex justify-content-end align-items-center">
+                <ul class="d-flex justify-content-between align-items-center">
+                    <li><a href="javascript:void(0)">지도</a></li>
+                    <li class="active"><a href="javascript:void(0)">목록</a></li>
+                </ul>
+                <a href="javascript:void(0)" class="nav-btn setting"></a>
+                <a href="javascript:void(0)" class="nav-btn logout"></a>
+            </div>
+        </div>
+
+        <div class="grip">
+            <div class=" d-flex justify-content-start align-items-center">
+                <div class="search-input">
+                    <input class="form-control search" type="search" placeholder="내용을 입력해주세요"
+                        aria-label="default input example">
+                    <a href="javascript:void(0)" class="search-clear"></a>
+                </div>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>설비상태</option>
+                    <option name="1">One</option>
+                    <option name="2">Two</option>
+                    <option name="3">liree</option>
+                </select>
+            </div>
+            <p class="search-result">'<span>제주발전소</span>' 검색결과</p>
+        </div>
+        <div class="grip-area">
+            <div class="table">
+                <div class="thead">
+                    <ul>
+                        <li>발전소명</li>
+                        <li>상태</li>
+                        <li>설비용량</li>
+                        <li>배터리용량</li>
+                        <li>현재출력</li>
+                        <li>금일 누적출력</li>
+                        <li>금일 예측발전</li>
+                        <li>전일 총 발전량</li>
+                    </ul>
+                </div>
+                <div class="tbody">
+                    <div class="table-row">
+                        <ul>
+                            <li>제주 ESS발전소</li>
+                            <li class="status-normal">정상운영상태</li>
+                            <li>PCS 100KW</li>
+                            <li>BAT 300kWh</li>
+                            <li>100KW</li>
+                            <li>300kWh</li>
+                            <li>2000KW</li>
+                            <li>1500kWh</li>
+                        </ul>
+                    </div>
+                    <div class="table-row">
+                        <ul>
+                            <li>제주 ESS발전소</li>
+                            <li class="status-normal">정상운영상태</li>
+                            <li>PCS 100KW</li>
+                            <li>BAT 300kWh</li>
+                            <li>100KW</li>
+                            <li>300kWh</li>
+                            <li>2000KW</li>
+                            <li>1500kWh</li>
+                        </ul>
+                    </div>
+                    <div class="table-row">
+                        <ul>
+                            <li>제주 ESS발전소</li>
+                            <li class="status-normal">정상운영상태</li>
+                            <li>PCS 100KW</li>
+                            <li>BAT 300kWh</li>
+                            <li>100KW</li>
+                            <li>300kWh</li>
+                            <li>2000KW</li>
+                            <li>1500kWh</li>
+                        </ul>
+                    </div>
+                    <div class="table-row">
+                        <ul>
+                            <li>제주 ESS발전소</li>
+                            <li class="status-error">PCS 에러발생</li>
+                            <li>PCS 100KW</li>
+                            <li>BAT 300kWh</li>
+                            <li>100KW</li>
+                            <li>300kWh</li>
+                            <li>2000KW</li>
+                            <li>1500kWh</li>
+                        </ul>
+                    </div>
+                    <div class="table-row">
+                        <ul>
+                            <li>제주 ESS발전소</li>
+                            <li class="status-normal">정상운영상태</li>
+                            <li>PCS 100KW</li>
+                            <li>BAT 300kWh</li>
+                            <li>100KW</li>
+                            <li>300kWh</li>
+                            <li>2000KW</li>
+                            <li>1500kWh</li>
+                        </ul>
+                    </div>
+                    <div class="table-row">
+                        <ul>
+                            <li>제주 ESS발전소</li>
+                            <li class="status-normal">정상운영상태</li>
+                            <li>PCS 100KW</li>
+                            <li>BAT 300kWh</li>
+                            <li>100KW</li>
+                            <li>300kWh</li>
+                            <li>2000KW</li>
+                            <li>1500kWh</li>
+                        </ul>
+                    </div>
+                    <div class="table-row">
+                        <ul>
+                            <li>제주 ESS발전소</li>
+                            <li class="status-normal">정상운영상태</li>
+                            <li>PCS 100KW</li>
+                            <li>BAT 300kWh</li>
+                            <li>100KW</li>
+                            <li>300kWh</li>
+                            <li>2000KW</li>
+                            <li>1500kWh</li>
+                        </ul>
+                    </div>
+                    <div class="table-row">
+                        <ul>
+                            <li>제주 ESS발전소</li>
+                            <li class="status-error">PCS 에러발생</li>
+                            <li>PCS 100KW</li>
+                            <li>BAT 300kWh</li>
+                            <li>100KW</li>
+                            <li>300kWh</li>
+                            <li>2000KW</li>
+                            <li>1500kWh</li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

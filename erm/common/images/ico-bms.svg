@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="타원_9" data-name="타원 9" cx="14" cy="14" r="14" transform="translate(1440 512)" fill="#131b24"/>
+    </clipPath>
+  </defs>
+  <g id="ico-bms" transform="translate(-1440 -512)">
+    <circle id="타원_5" data-name="타원 5" cx="19" cy="19" r="19" transform="translate(1440 512)" fill="#131b24"/>
+    <g id="마스크_그룹_24" data-name="마스크 그룹 24" transform="translate(5 6)" clip-path="url(#clip-path)">
+      <g id="Layer_2" data-name="Layer 2" transform="translate(1440 512)">
+        <g id="invisible_box" data-name="invisible box">
+          <rect id="사각형_359" data-name="사각형 359" width="28" height="28" fill="none"/>
+        </g>
+        <g id="horoscope" transform="translate(2.065 -1.123)">
+          <path id="패스_472" data-name="패스 472" d="M22.554,20.445,12.816,2.828a1.028,1.028,0,0,0-1.713,0L1.316,20.445a.979.979,0,0,0,.832,1.468H21.722a.979.979,0,0,0,.832-1.468ZM14.284,13.4,10.076,18.39a.2.2,0,1,1-.343-.2l1.223-3.621H9a.489.489,0,0,1-.391-.783l4.208-5.04c.147-.147.44.049.343.245l-1.223,3.621h1.957a.489.489,0,0,1,.391.783Z" transform="translate(0)" fill="#354250"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

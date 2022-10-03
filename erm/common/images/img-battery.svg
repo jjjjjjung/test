@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="138" height="138" viewBox="0 0 138 138">
+  <defs>
+    <filter id="사각형_345" x="0" y="0" width="138" height="138" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="사각형_390" data-name="사각형 390" width="35.569" height="67.125" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="사각형_382" data-name="사각형 382" width="9.795" height="59.121" transform="translate(1.582 6.289)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="사각형_388" data-name="사각형 388" width="14.888" height="12.345" transform="translate(13.577 32.154)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="img-battery" transform="translate(-887 -375)">
+    <g transform="matrix(1, 0, 0, 1, 887, 375)" filter="url(#사각형_345)">
+      <g id="사각형_345-2" data-name="사각형 345" transform="translate(4 6)" fill="#19232f" stroke="#436479" stroke-width="1">
+        <rect width="120" height="120" rx="60" stroke="none"/>
+        <rect x="0.5" y="0.5" width="119" height="119" rx="59.5" fill="none"/>
+      </g>
+    </g>
+    <g id="그룹_824" data-name="그룹 824" transform="translate(933 407)">
+      <g id="그룹_823" data-name="그룹 823" clip-path="url(#clip-path)">
+        <g id="그룹_822" data-name="그룹 822">
+          <g id="그룹_821" data-name="그룹 821" clip-path="url(#clip-path)">
+            <path id="패스_519" data-name="패스 519" d="M35.569,19.625H0V7.811A3.236,3.236,0,0,1,3.237,4.575h29.1a3.236,3.236,0,0,1,3.237,3.236Z" fill="#bbc8cf"/>
+            <path id="패스_520" data-name="패스 520" d="M32.274,67.125H3.3A3.3,3.3,0,0,1,0,63.83V25.445H35.569V63.83a3.3,3.3,0,0,1-3.3,3.295" fill="#4a6d7f"/>
+            <rect id="사각형_381" data-name="사각형 381" width="35.569" height="5.82" transform="translate(0 19.625)" fill="#ebf1f6"/>
+            <g id="그룹_817" data-name="그룹 817" opacity="0.4">
+              <g id="그룹_816" data-name="그룹 816">
+                <g id="그룹_815" data-name="그룹 815" clip-path="url(#clip-path-3)">
+                  <path id="패스_521" data-name="패스 521" d="M8.082,62.115V9.526a3.237,3.237,0,0,1,3.237-3.237h-6.5A3.237,3.237,0,0,0,1.582,9.526V62.115a3.3,3.3,0,0,0,3.295,3.3h6.5a3.3,3.3,0,0,1-3.3-3.3" fill="#fff"/>
+                </g>
+              </g>
+            </g>
+            <path id="패스_522" data-name="패스 522" d="M21.46,0H14.108a2.731,2.731,0,0,0-2.731,2.731V4.575H24.191V2.731A2.731,2.731,0,0,0,21.46,0" fill="#739fc4"/>
+            <path id="패스_523" data-name="패스 523" d="M21.992,11.279H19.016V8.3H16.552v2.976H13.577v2.464h2.975v2.976h2.464V13.743h2.976Z" fill="#fff"/>
+            <path id="패스_524" data-name="패스 524" d="M21.992,57.945H13.577v2.464h8.415Z" fill="#fff"/>
+            <g id="그룹_820" data-name="그룹 820" opacity="0.6">
+              <g id="그룹_819" data-name="그룹 819">
+                <g id="그룹_818" data-name="그룹 818" clip-path="url(#clip-path-4)">
+                  <rect id="사각형_383" data-name="사각형 383" width="14.888" height="1.258" transform="translate(13.577 32.153)" fill="#fff"/>
+                  <rect id="사각형_384" data-name="사각형 384" width="5.388" height="1.258" transform="translate(13.577 35.849)" fill="#fff"/>
+                  <rect id="사각형_385" data-name="사각형 385" width="7.444" height="1.258" transform="translate(21.021 35.849)" fill="#fff"/>
+                  <rect id="사각형_386" data-name="사각형 386" width="14.888" height="1.258" transform="translate(13.577 39.545)" fill="#fff"/>
+                  <rect id="사각형_387" data-name="사각형 387" width="8.888" height="1.258" transform="translate(13.577 43.241)" fill="#fff"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

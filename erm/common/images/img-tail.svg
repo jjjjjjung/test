@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="59" viewBox="0 0 64 59">
+  <defs>
+    <filter id="img-tail" x="0" y="0" width="64" height="59" filterUnits="userSpaceOnUse">
+      <feOffset dx="6" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#img-tail)">
+    <path id="img-tail-2" data-name="img-tail" d="M17,0,34,29H0Z" transform="translate(43 38) rotate(180)" fill="#131b24"/>
+  </g>
+</svg>

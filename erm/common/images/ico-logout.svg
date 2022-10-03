@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <g id="ico-logout" transform="translate(0.007)">
+    <g id="invisible_box" data-name="invisible box" transform="translate(-0.007)">
+      <rect id="사각형_263" data-name="사각형 263" width="28" height="28" fill="none"/>
+    </g>
+    <g id="icons_Q2" data-name="icons Q2" transform="translate(3.487 1.744)">
+      <g id="그룹_692" data-name="그룹 692">
+        <path id="패스_409" data-name="패스 409" d="M19.4,3a6.4,6.4,0,1,0,6.4,6.4A6.4,6.4,0,0,0,19.4,3Z" transform="translate(-8.93 -3)" fill="#b4becc"/>
+        <path id="패스_410" data-name="패스 410" d="M25.768,38.3H7.163A1.163,1.163,0,0,1,6,37.139V32.2l.523-.349A18.663,18.663,0,0,1,16.465,29a18.2,18.2,0,0,1,9.942,2.907l.523.291v4.942A1.163,1.163,0,0,1,25.768,38.3ZM8.326,35.977H24.6V33.535a15.989,15.989,0,0,0-8.14-2.209,16.512,16.512,0,0,0-8.14,2.151Z" transform="translate(-6 -13.883)" fill="#b4becc"/>
+        <path id="패스_411" data-name="패스 411" d="M25.768,38.3H7.163A1.163,1.163,0,0,1,6,37.139V32.2l.523-.349A18.663,18.663,0,0,1,16.465,29a18.2,18.2,0,0,1,9.942,2.907l.523.291v4.942A1.163,1.163,0,0,1,25.768,38.3Z" transform="translate(-6 -13.883)" fill="#b4becc"/>
+      </g>
+    </g>
+  </g>
+</svg>

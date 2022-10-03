@@ -1,0 +1,17 @@
+<svg id="ico-pcs-normal" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_278" data-name="사각형 278" width="24" height="24" transform="translate(101 454)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="충전" transform="translate(-101 -454)" clip-path="url(#clip-path)">
+    <g id="Layer_2" data-name="Layer 2" transform="translate(101 454)">
+      <g id="invisible_box" data-name="invisible box">
+        <rect id="사각형_282" data-name="사각형 282" width="24" height="24" fill="none"/>
+      </g>
+      <g id="horoscope">
+        <path id="패스_423" data-name="패스 423" d="M23,12A11,11,0,0,1,13,22.95V17.4a4.9,4.9,0,0,0,4-4.85V10.5a1.05,1.05,0,0,0-1-1H15V6.95a1,1,0,0,0-2,0V9.5H11V6.95a1,1,0,0,0-2,0V9.5H8a1,1,0,0,0-1,1v2.05a5,5,0,0,0,1.4,3.5A4.7,4.7,0,0,0,11,17.4v5.55A11,11,0,1,1,23,12Z" fill="#717987"/>
+      </g>
+    </g>
+  </g>
+</svg>

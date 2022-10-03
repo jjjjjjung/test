@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="타원_11" data-name="타원 11" cx="14" cy="14" r="14" transform="translate(1440 832)" fill="#131b24"/>
+    </clipPath>
+  </defs>
+  <g id="ico-batteryInfo" transform="translate(-1440 -832)">
+    <circle id="타원_6" data-name="타원 6" cx="19" cy="19" r="19" transform="translate(1440 832)" fill="#131b24"/>
+    <g id="마스크_그룹_25" data-name="마스크 그룹 25" transform="translate(6 5)" clip-path="url(#clip-path)">
+      <g id="Layer_2" data-name="Layer 2" transform="translate(1440 832)">
+        <g id="Icons">
+          <g id="그룹_800" data-name="그룹 800">
+            <rect id="사각형_360" data-name="사각형 360" width="28" height="28" fill="none"/>
+            <path id="패스_473" data-name="패스 473" d="M26.25,11.083H24.5V8.75a2.333,2.333,0,0,0-2.333-2.333H3.5A2.333,2.333,0,0,0,1.167,8.75v10.5A2.333,2.333,0,0,0,3.5,21.583H22.167A2.333,2.333,0,0,0,24.5,19.25V16.917h1.75a.583.583,0,0,0,.583-.583V11.667A.583.583,0,0,0,26.25,11.083Zm-5.833,7H4.667V9.917h15.75Z" fill="#354250"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="138" height="138" viewBox="0 0 138 138">
+  <defs>
+    <filter id="사각형_342" x="0" y="0" width="138" height="138" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="사각형_364" data-name="사각형 364" width="70.613" height="59.855" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="사각형_363" data-name="사각형 363" width="70.613" height="59.855" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="사각형_362" data-name="사각형 362" width="63.864" height="28.659" transform="translate(2.769 2.072)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="img-solarPannel" transform="translate(-619 -176)">
+    <g transform="matrix(1, 0, 0, 1, 619, 176)" filter="url(#사각형_342)">
+      <g id="사각형_342-2" data-name="사각형 342" transform="translate(4 6)" fill="#19232f" stroke="#436479" stroke-width="1">
+        <rect width="120" height="120" rx="60" stroke="none"/>
+        <rect x="0.5" y="0.5" width="119" height="119" rx="59.5" fill="none"/>
+      </g>
+    </g>
+    <g id="그룹_807" data-name="그룹 807" transform="translate(648 212)">
+      <g id="그룹_806" data-name="그룹 806" clip-path="url(#clip-path)">
+        <rect id="사각형_361" data-name="사각형 361" width="5.377" height="34.019" transform="translate(31.128 14.662)" fill="#739fc4"/>
+        <path id="패스_474" data-name="패스 474" d="M69.4,0,12.261,1.49,0,32.8l1.211,1.49H59.564L70.613,1.49Z" fill="#8eb2cf"/>
+        <path id="패스_475" data-name="패스 475" d="M11.05,0,0,32.8H58.353L69.4,0Z" fill="#ebf1f6"/>
+        <path id="패스_476" data-name="패스 476" d="M12.423,2.072H24.858l-2.883,8.56H9.54Z" fill="#4a6d7f"/>
+        <path id="패스_477" data-name="패스 477" d="M26.348,2.072H38.783L35.9,10.632H23.465Z" fill="#4a6d7f"/>
+        <path id="패스_478" data-name="패스 478" d="M40.273,2.072H52.708l-2.883,8.56H37.39Z" fill="#4a6d7f"/>
+        <path id="패스_479" data-name="패스 479" d="M54.2,2.072H66.633l-2.883,8.56H51.315Z" fill="#4a6d7f"/>
+        <path id="패스_480" data-name="패스 480" d="M9.038,12.121H21.473l-2.883,8.56H6.155Z" fill="#4a6d7f"/>
+        <path id="패스_481" data-name="패스 481" d="M22.963,12.121H35.4l-2.883,8.56H20.08Z" fill="#4a6d7f"/>
+        <path id="패스_482" data-name="패스 482" d="M36.888,12.121H49.323l-2.883,8.56H34Z" fill="#4a6d7f"/>
+        <path id="패스_483" data-name="패스 483" d="M50.813,12.121H63.248l-2.883,8.56H47.93Z" fill="#4a6d7f"/>
+        <path id="패스_484" data-name="패스 484" d="M5.652,22.171H18.087L15.2,30.731H2.769Z" fill="#4a6d7f"/>
+        <path id="패스_485" data-name="패스 485" d="M19.577,22.171H32.012l-2.883,8.56H16.694Z" fill="#4a6d7f"/>
+        <path id="패스_486" data-name="패스 486" d="M33.5,22.171H45.937l-2.883,8.56H30.619Z" fill="#4a6d7f"/>
+        <path id="패스_487" data-name="패스 487" d="M47.427,22.171H59.862l-2.883,8.56H44.544Z" fill="#4a6d7f"/>
+        <g id="그룹_805" data-name="그룹 805">
+          <g id="그룹_804" data-name="그룹 804" clip-path="url(#clip-path-2)">
+            <path id="패스_488" data-name="패스 488" d="M41.825,48.681H25.809A2.623,2.623,0,0,0,23.186,51.3v1.474H44.448V51.3a2.623,2.623,0,0,0-2.623-2.623" fill="#8eb2cf"/>
+            <path id="패스_489" data-name="패스 489" d="M56.491,59.855H11.143V55.742a2.964,2.964,0,0,1,2.965-2.964H53.527a2.965,2.965,0,0,1,2.964,2.964Z" fill="#bdd2e3"/>
+            <g id="그룹_803" data-name="그룹 803" opacity="0.2">
+              <g id="그룹_802" data-name="그룹 802">
+                <g id="그룹_801" data-name="그룹 801" clip-path="url(#clip-path-3)">
+                  <path id="패스_490" data-name="패스 490" d="M66.633,2.072,2.769,30.731h54.21Z" fill="#fff"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
