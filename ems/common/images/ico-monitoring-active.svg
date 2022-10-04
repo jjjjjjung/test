@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_317" data-name="사각형 317" width="40" height="40" transform="translate(42 168)" fill="#0d0d0d"/>
+    </clipPath>
+  </defs>
+  <g id="ico-monitoring" transform="translate(-42 -168)" clip-path="url(#clip-path)">
+    <g id="Layer_2" data-name="Layer 2" transform="translate(42 168)">
+      <g id="invisible_box" data-name="invisible box">
+        <rect id="사각형_353" data-name="사각형 353" width="40" height="40" fill="none"/>
+      </g>
+      <g id="icons_Q2" data-name="icons Q2">
+        <path id="패스_468" data-name="패스 468" d="M36.667,3.333H3.333A1.667,1.667,0,0,0,1.667,5V28.333A1.667,1.667,0,0,0,3.333,30h15v3.333h-7.5a1.667,1.667,0,1,0,0,3.333H29.167a1.667,1.667,0,1,0,0-3.333h-7.5V30h15a1.667,1.667,0,0,0,1.667-1.667V5A1.667,1.667,0,0,0,36.667,3.333Z" fill="#49b74e"/>
+      </g>
+    </g>
+  </g>
+</svg>
