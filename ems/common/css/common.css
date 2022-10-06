@@ -1133,16 +1133,16 @@ input::-webkit-search-results-decoration {
 .box-content dl:last-child{
   margin-bottom: 0;
 }
-.box-content tr > *{
+.box-content dl > *{
   font-size: 16px;;
 }
-.box-content tr th{
+.box-content dl dt{
   position:relative;
   padding-left:20px;
   color:#B4BECC;
   font-weight: bold;
 }
-.box-content tr th::before{
+.box-content dl dt::before{
   content:'';
   background-color: #717987;
   display: block;
@@ -1154,10 +1154,14 @@ input::-webkit-search-results-decoration {
   top:50%;
   transform: translateY(-50%);
 }
-.box-content tr td{
+.box-content dl dd{
   background:#131B24;
   padding:6px 10px;
   text-align: right;
   color:#E8EDF5;
   border-radius: 4px;
+  flex-basis: 60%;
+}
+.box-content dl dd+dd{
+  margin-left:10px;
 }
