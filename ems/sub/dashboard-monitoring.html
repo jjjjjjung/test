@@ -99,23 +99,23 @@
                     <div class="cont-box ">
                         <p class="cont-ttl measuring" data-bs-toggle="modal" data-bs-target="#measuringModal">계측기</p>
                         <div class="">
-                            <div class="graph-area"></div>
+                            <div class="graph-area mb-4" style="height: 260px;">그래프 라이브러리</div>
                             <div class="box-content">
-                                <dl>
-                                    <dt>충방전력</dt>
-                                    <dd>1000KW</dd>
+                                <dl class="row">
+                                    <dt class="col-5">충방전력</dt>
+                                    <dd class="col">1000KW</dd>
                                 </dl>
-                                <dl>
-                                    <dt>충방전력</dt>
-                                    <dd>1000KW</dd>
+                                <dl class="row">
+                                    <dt class="col-5">발전전력</dt>
+                                    <dd class="col">1000KW</dd>
                                 </dl>
-                                <dl>
-                                    <dt>충방전력</dt>
-                                    <dd>1000KW</dd>
+                                <dl class="row">
+                                    <dt class="col-5">금일 발전량</dt>
+                                    <dd class="col">1000KW</dd>
                                 </dl>
-                                <dl>
-                                    <dt>충방전력</dt>
-                                    <dd>1000KW</dd>
+                                <dl class="row">
+                                    <dt class="col-5">10 - 16 발전량</dt>
+                                    <dd class="col">1000KW</dd>
                                 </dl>
                             </div>
                         </div>
@@ -123,20 +123,25 @@
                     <div class="cont-box ">
                         <p class="cont-ttl manage">운영정보</p>
                         <div class="box-content">
-                            <dl>
-                                <dt>충방전력</dt>
-                                <dd>1000KW</dd>
-                                <dd>1000KW</dd>
+                            <ul class="row mb-3">
+                                <li class="col-3"></li>
+                                <li class="col">충전량</li>
+                                <li class="col">방전량</li>
+                            </ul>
+                            <dl class="row">
+                                <dt class="col-3">오늘</dt>
+                                <dd class="col">1000KW</dd>
+                                <dd class="col">500KW</dd>
                             </dl>
-                            <dl>
-                                <dt>충방전력</dt>
-                                <dd>1000KW</dd>
-                                <dd>1000KW</dd>
+                            <dl class="row">
+                                <dt class="col-3">어제</dt>
+                                <dd class="col">1000KW</dd>
+                                <dd class="col">1000KW</dd>
                             </dl>
-                            <dl>
-                                <dt>충방전력</dt>
-                                <dd>1000KW</dd>
-                                <dd>1000KW</dd>
+                            <dl class="row">
+                                <dt class="col-3">평균</dt>
+                                <dd class="col">1000KW</dd>
+                                <dd class="col">1000KW</dd>
                             </dl>
                         </div>
                     </div>
@@ -144,18 +149,107 @@
                 <div class="col-6">
                     <div class="cont-box img">
                         <img src="../common/images/img-monitoring.png">
+                        <div class="measure solarToPcs">100KW</div>
+                        <div class="measure pcsToSystem">20KW</div>
+                        <div class="measure pcsToBattery">80KW</div>
+                        <div class="measure battery">SoC : <span>50%</span></div>
                     </div>
-                    <div class="cont-box graph"></div>
+                    <div class="cont-box graph-area" style="height:320px">그래프 라이브러리</div>
                 </div>
                 <div class="col">
-                    <div class="cont-box  ">
+                    <div class="cont-box">
                         <p class="cont-ttl pcsInfo stop" data-bs-toggle="modal" data-bs-target="#pcsModal">PCS 정보</p>
+                        <table class="table-dark small ">
+                            <tr>
+                                <th></th>
+                                <th>R</th>
+                                <th>S</th>
+                                <th>T</th>
+                            </tr>
+                            <tr>
+                                <th>전압</th>
+                                <td>전압</td>
+                                <td>전압</td>
+                                <td>전압</td>
+                            </tr>
+                            <tr>
+                                <th>전류</th>
+                                <td>전류</td>
+                                <td>전류</td>
+                                <td>전류</td>
+                            </tr>
+                        </table>
+                        <div class="box-content mt-3">
+                            <dl class="row">
+                                <dt class="col-5">유효전력</dt>
+                                <dd class="col">999999999999999</dd>
+                            </dl>
+                            <dl class="row">
+                                <dt class="col-5">절연저항</dt>
+                                <dd class="col">999999999999999</dd>
+                            </dl>
+                            <dl class="row">
+                                <dt class="col-5">온도</dt>
+                                <dd class="col">999999999999999</dd>
+                            </dl>
+                        </div>
                     </div>
                     <div class="cont-box ">
                         <p class="cont-ttl bmsInfo off" data-bs-toggle="modal" data-bs-target="#bmsModal">BMS 정보</p>
+                        <table class="table-dark small ">
+                            <tr>
+                                <th>SoC</th>
+                                <td>SoC</td>
+                                <th>전압</th>
+                                <td>전압</td>
+                            </tr>
+                            <tr>
+                                <th>SoH</th>
+                                <td>SoH</td>
+                                <th>전류</th>
+                                <td>전류</td>
+                            </tr>
+                            <tr>
+                                <th>SoC</th>
+                                <td>SoC</td>
+                                <th>온도</th>
+                                <td>온도</td>
+                            </tr>
+                        </table>
+                        <table class="table-dark small mt-3">
+                            <tr>
+                                <th></th>
+                                <th>R</th>
+                                <th>R</th>
+                            </tr>
+                            <tr>
+                                <th>Cell 전압</th>
+                                <td>R</td>
+                                <td>R</td>
+                            </tr>
+                            <tr>
+                                <th>Cell 전류</th>
+                                <td>R</td>
+                                <td>R</td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="cont-box ">
+                    <div class="cont-box">
                         <p class="cont-ttl batInfo">배터리실 정보</p>
+                        <div class="box-content">
+                            <dl class="row">
+                                <dt class="col-5">현재온도</dt>
+                                <dd class="col">999999999999999</dd>
+                            </dl>
+                            <dl class="row">
+                                <dt class="col-5">설정온도</dt>
+                                <dd class="col">999999999999999</dd>
+                            </dl>
+                            <dl class="row">
+                                <dt class="col-5">습도</dt>
+                                <dd class="col">999999999999999</dd>
+                            </dl>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -173,14 +267,23 @@
                             <div class="modal-cont">
                                 <dl>
                                     <dt>계측기 정보</dt>
-                                    <dd>
+                                    <dd class="sticky-head" style="height: 300px;">
                                         <table class="table-dark">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Label</th>
+                                                    <th>Label</th>
+                                                    <th>Label</th>
+                                                    <th>Label</th>
+                                                </tr>
+                                            </thead>
                                             <tr>
-                                                <th></th>
                                                 <th>Label</th>
-                                                <th>Label</th>
-                                                <th>Label</th>
-                                                <th>Label</th>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
                                             </tr>
                                             <tr>
                                                 <th>Label</th>
@@ -207,14 +310,23 @@
                                     </dd>
                                     <dl class="mt-5">
                                         <dt>활동 정보</dt>
-                                        <dd>
+                                        <dd class="sticky-head" style="height: 300px;">
                                             <table class="table-dark">
+                                                <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th>Label</th>
+                                                        <th>Label</th>
+                                                        <th>Label</th>
+                                                        <th>Label</th>
+                                                    </tr>
+                                                </thead>
                                                 <tr>
-                                                    <th></th>
                                                     <th>Label</th>
-                                                    <th>Label</th>
-                                                    <th>Label</th>
-                                                    <th>Label</th>
+                                                    <td>Value</td>
+                                                    <td>Value</td>
+                                                    <td>Value</td>
+                                                    <td>Value</td>
                                                 </tr>
                                                 <tr>
                                                     <th>Label</th>
@@ -251,9 +363,9 @@
                 <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title cont-ttl pcsInfo mb-0 d-flex justify-content-start align-items-center"
+                            <h5 class="modal-title col-6 cont-ttl pcsInfo mb-0 d-flex justify-content-start align-items-center"
                                 id="pcsModal">PCS
-                                <select class="form-select " aria-label="Default select example">
+                                <select class="form-select mx-4" aria-label="Default select example">
                                     <option selected>PCS #2</option>
                                 </select>
                                 <div class="pcs-status normal"></div>
@@ -265,14 +377,23 @@
                             <div class="modal-cont">
                                 <dl>
                                     <dt>BAT</dt>
-                                    <dd>
+                                    <dd class="sticky-head" style="height:300px">
                                         <table class="table-dark">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Label</th>
+                                                    <th>Label</th>
+                                                    <th>Label</th>
+                                                    <th>Label</th>
+                                                </tr>
+                                            </thead>
                                             <tr>
-                                                <th></th>
                                                 <th>Label</th>
-                                                <th>Label</th>
-                                                <th>Label</th>
-                                                <th>Label</th>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
                                             </tr>
                                             <tr>
                                                 <th>Label</th>
@@ -297,10 +418,12 @@
                                             </tr>
                                         </table>
                                     </dd>
-                                    <dl class="mt-5">
-                                        <dt>PCS</dt>
-                                        <dd>
-                                            <table class="table-dark">
+                                </dl>
+                                <dl class="mt-5">
+                                    <dt>PCS</dt>
+                                    <dd class="sticky-head" style="height:300px">
+                                        <table class="table-dark">
+                                            <thead>
                                                 <tr>
                                                     <th></th>
                                                     <th>Label</th>
@@ -308,30 +431,158 @@
                                                     <th>Label</th>
                                                     <th>Label</th>
                                                 </tr>
-                                                <tr>
-                                                    <th>Label</th>
-                                                    <td>Value</td>
-                                                    <td>Value</td>
-                                                    <td>Value</td>
-                                                    <td>Value</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Label</th>
-                                                    <td>Value</td>
-                                                    <td>Value</td>
-                                                    <td>Value</td>
-                                                    <td>Value</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Label</th>
-                                                    <td>Value</td>
-                                                    <td>Value</td>
-                                                    <td>Value</td>
-                                                    <td>Value</td>
-                                                </tr>
-                                            </table>
-                                        </dd>
+                                            </thead>
+                                            <tr>
+                                                <th>Label</th>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Label</th>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Label</th>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Label</th>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                            </tr>
+                                        </table>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BMS 모달 -->
+            <div class="modal" id="bmsModal" tabindex="-1" aria-labelledby="bmsModal" aria-hidden="true">
+                <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title col-6 cont-ttl bmsInfo mb-0 d-flex justify-content-start align-items-center"
+                                id="bmsModal">BMS
+                                <select class="form-select mx-4" aria-label="Default select example">
+                                    <option selected>BMS #2</option>
+                                </select>
+                                <div class="bms-status on"></div>
+                                <div class="bms-mesaure">
+                                    <dl class="row">
+                                        <dt class="col-6">SoC</dt>
+                                        <dd class="col-6">70%</dd>
                                     </dl>
+                                    <dl class="row">
+                                        <dt class="col-6">SoH</dt>
+                                        <dd class="col-6">100%</dd>
+                                    </dl>
+                                </div>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-cont">
+                                <dl>
+                                    <dt>Status</dt>
+                                    <dd class="sticky-head" style="height:300px">
+                                        <table class="table-dark">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Label</th>
+                                                    <th>Label</th>
+                                                    <th>Label</th>
+                                                    <th>Label</th>
+                                                </tr>
+                                            </thead>
+                                            <tr>
+                                                <th>Label</th>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Label</th>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Label</th>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Label</th>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                            </tr>
+                                        </table>
+                                    </dd>
+                                </dl>
+                                <dl class="mt-5">
+                                    <dt>Alarm</dt>
+                                    <dd class="sticky-head" style="height:300px">
+                                        <table class="table-dark">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Label</th>
+                                                    <th>Label</th>
+                                                    <th>Label</th>
+                                                    <th>Label</th>
+                                                </tr>
+                                            </thead>
+                                            <tr>
+                                                <th>Label</th>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Label</th>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Label</th>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Label</th>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                                <td>Value</td>
+                                            </tr>
+                                        </table>
+                                    </dd>
+                                </dl>
                             </div>
                         </div>
                     </div>
@@ -344,6 +595,9 @@
 
 
     </div>
+    <script>
+    </script>
 </body>
+
 
 </html>

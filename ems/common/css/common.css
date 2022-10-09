@@ -10,6 +10,8 @@ body {
   position: relative;
   line-height: 1;
   color: #212121;
+  overflow: hidden;
+  height: 100vh
 }
 
 a {
@@ -41,6 +43,25 @@ input[type="number"]::-webkit-outer-spin-button {
   appearance: none;
   border: 0;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+
+  /*스크롤바의 너비*/
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #2f3d4e;
+  /*스크롤바의 색상*/
+}
+
+::-webkit-scrollbar-track {
+  background-color: #131B24;
+  /*스크롤바 트랙 색상*/
+}
+
+출처: https: //eunyoe.tistory.com/77 [eunyo의 it이야기:티스토리]
 
 /* display 관련 */
 
@@ -505,14 +526,16 @@ input::-webkit-search-results-decoration {
 }
 
 .pcs-name,
-.bat-name {
+.bat-name,
+.pcs-status {
   position: relative;
   padding-left: 34px;
   font-weight: bold;
 }
 
 .pcs-name::before,
-.bat-name::before {
+.bat-name::before,
+.pcs-status::before {
   display: inline-block;
   content: '';
   background-size: contain;
@@ -526,19 +549,23 @@ input::-webkit-search-results-decoration {
   transform: translateY(-50%);
 }
 
-.pcs-name.normal::before {
+.pcs-name.normal::before,
+.pcs-status.normal::before {
   background-image: url(../images/ico-pcs-normal.svg);
 }
 
-.pcs-name.error::before {
+.pcs-name.error::before,
+.pcs-status.error::before {
   background-image: url(../images/ico-pcs-error.svg);
 }
 
-.pcs-name.discharge::before {
+.pcs-name.discharge::before,
+.pcs-status.discharge::before {
   background-image: url(../images/ico-pcs-discharge.svg);
 }
 
-.pcs-name.waiting::before {
+.pcs-name.waiting::before,
+.pcs-status.waiting::before {
   background-image: url(../images/ico-pcs-waiting.svg);
 }
 
@@ -1037,7 +1064,7 @@ input::-webkit-search-results-decoration {
 }
 
 .cont-box {
-  border-radius: 0.5rem;
+  border-radius: 0.5rem !important;
   background-color: #19232F;
   border: 1px solid #242B35;
   box-shadow: 0px 3px 6px #00000029;
@@ -1135,20 +1162,17 @@ input::-webkit-search-results-decoration {
   background-color: #131B24;
   border-radius: 4px;
   width: 100%;
-  height: 310px;
   color: #E8EDF5;
   text-align: center;
+  padding: 30px;
 }
 
-.box-content {
-  margin-top: 30px;
-}
+.box-content {}
 
 .box-content dl {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
   align-items: center;
+  margin: auto;
+  margin-bottom: 10px;
 }
 
 .box-content dl:last-child {
@@ -1158,6 +1182,12 @@ input::-webkit-search-results-decoration {
 .box-content dl>* {
   font-size: 16px;
   ;
+}
+
+.box-content li {
+  color: #B4BECC;
+  font-weight: bold;
+  text-align: center;
 }
 
 .box-content dl dt,
@@ -1188,7 +1218,6 @@ input::-webkit-search-results-decoration {
   text-align: right;
   color: #E8EDF5;
   border-radius: 4px;
-  flex-basis: 60%;
 }
 
 .box-content dl dd+dd {
@@ -1197,14 +1226,44 @@ input::-webkit-search-results-decoration {
 
 
 .cont-box.img {
-  padding: 10px;
+  padding: 30px 60px 50px;
+  position: relative;
 }
 
 .cont-box.img img {
   width: 100%;
 }
 
+.cont-box .measure {
+  background: #131B24;
+  border-radius: 4px;
+  color: #E8EDF5;
+  padding: 6px 24px;
+  position: absolute;
+  top: 30px;
+}
 
+.measure.solarToPcs {
+  left: 30%;
+  transform: translateX(-30%);
+}
+
+.measure.pcsToSystem {
+  left: 60%;
+}
+
+.measure.pcsToBattery {
+  left: 55%;
+  top: 45%;
+  transform: translate(-55% -45%);
+}
+
+.measure.battery {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  top: inherit
+}
 
 /* modal */
 .dashboard-area .modal-content {
@@ -1233,11 +1292,11 @@ input::-webkit-search-results-decoration {
 
 .dashboard-area .modal-body {
   padding: 40px;
+  overflow: hidden;
 }
 
 .table-dark {
   width: 100%;
-  margin-top: 1rem
 }
 
 .table-dark th,
@@ -1248,6 +1307,11 @@ input::-webkit-search-results-decoration {
   border: 1px solid #19232F
 }
 
+.table-dark.small th,
+.table-dark.small td {
+  padding: 4px;
+}
+
 .table-dark th {
   background: #131B24;
 }
@@ -1256,6 +1320,68 @@ input::-webkit-search-results-decoration {
   background: #354250
 }
 
+.modal-title.pcsInfo.cont-ttl::after,
+.modal-title.bmsInfo.cont-ttl::after {
+  display: none;
+}
+
+.bms-status {
+  position: relative;
+}
+
+.bms-status::after {
+  position: absolute;
+  content: '';
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bms-status.on::after {
+  background-image: url(../images/ico-bms-on.svg);
+}
+
+.bms-status.off::after {
+  background-image: url(../images/ico-bms-off.svg);
+}
+
+.bms-mesaure {
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.bms-mesaure dl+dl {
+  position: relative;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.bms-mesaure dl+dl::before {
+  display: block;
+  content: '';
+  width: 1px;
+  height: 50%;
+  background: #37424F;
+  left: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+
+.bms-mesaure dd {
+  color: #E8EDF5
+}
 
 /* info menu */
 .nav-tabs {
@@ -1305,6 +1431,12 @@ input::-webkit-search-results-decoration {
   background: #354250;
 }
 
+.tab-btn-area button.active,
+.tab-btn-area button:hover {
+  color: #354250;
+  background: #B4BECC
+}
+
 .period-btn button+button {
   margin-left: 15px;
 }
@@ -1334,17 +1466,17 @@ input::-webkit-search-results-decoration {
   height: 52px;
 }
 
-.stick-head {
+.sticky-head {
   overflow: auto;
-  margin-top: 40px;
+  margin-top: 30px;
 
 }
 
-.stick-head table {
+.sticky-head table {
   width: 100%;
 }
 
-.stick-head thead th {
+.sticky-head thead th {
   position: sticky;
   top: 0;
 }
@@ -1372,19 +1504,35 @@ input::-webkit-search-results-decoration {
   display: block;
 }
 
-.nav-tabs.btn-group {
-  width: 440px
+.btn-group {
+  width: 440px;
+  margin-bottom: 60px;
 }
 
-.nav-tabs.btn-group button {
+.btn-group button {
   font-size: 16px;
   color: #717987;
   font-weight: bold;
   background: #354250;
   border-color: #656E7B;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 0.5rem;
 }
 
-.nav-tabs.btn-group button.active {
+.btn-group button.active,
+.btn-group button:hover {
   color: #354250;
   background: #B4BECC
+}
+
+.manual-btns {
+  flex-wrap: wrap;
+
+}
+
+.manual-btns button {
+  width: 180px;
+  margin-left: 20px;
+  margin-top: 30px
 }
