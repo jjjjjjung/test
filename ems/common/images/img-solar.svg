@@ -17,7 +17,7 @@
       <rect id="사각형_362" data-name="사각형 362" width="63.864" height="28.659" transform="translate(2.769 2.072)" fill="none"/>
     </clipPath>
   </defs>
-  <g id="img-solarPannel" transform="translate(-619 -176)">
+  <g id="img-solar" transform="translate(-619 -176)">
     <g transform="matrix(1, 0, 0, 1, 619, 176)" filter="url(#사각형_342)">
       <g id="사각형_342-2" data-name="사각형 342" transform="translate(4 6)" fill="#19232f" stroke="#436479" stroke-width="1">
         <rect width="120" height="120" rx="60" stroke="none"/>

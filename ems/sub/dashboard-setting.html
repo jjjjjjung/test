@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widli=device-widli, initial-scale=1.0">
+    <link rel="stylesheet" href="../common/css/normalize.css">
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!-- Option 1: Bootstrap Bundle wili Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../common/css/reset.css">
+    <link rel="stylesheet" href="../common/css/common.css">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <title>세팅</title>
+</head>
+
+<body>
+    <div class="container bg dashboard d-flex justify-content-start align-items-start">
+        <div class="l-gnb">
+            <h1 class="gnb-logo"><img src="../common/images/sub-logo.svg"></h1>
+            <ul>
+                <li>
+                    <a href="dashboard-monitoring.html" class="gnb-menu  monitoring">
+                        모니터링
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard-info.html" class="gnb-menu  info">
+                        정보분석
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard-detailInfo.html" class="gnb-menu  detailInfo">
+                        알람
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard-control.html" class="gnb-menu control">
+                        제어
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard-setting.html" class="gnb-menu active setting">
+                        세팅
+                    </a>
+                </li>
+            </ul>
+            <select class="form-select " aria-label="Default select">
+                <option selected>Auto Mode</option>
+            </select>
+            <select class="form-select" aria-label="Default select">
+                <option selected>PCS Mode</option>
+            </select>
+        </div>
+        <div class="dashboard-area">
+            <div class="dash-nav d-flex justify-content-between align-items-center">
+                <div class="system-area  d-flex justify-content-between align-items-center">
+                    <h2 class="system-name normal">제주 ESS발전소</h2>
+                    <p class="pcs normal">PCS</p>
+                </div>
+                <div class="nav-info d-flex justify-content-start align-items-center">
+                    <dl class="weather">
+                        <dt>날씨</dt>
+                        <dd>20도 맑음</dd>
+                    </dl>
+                    <dl class="solar-pannel">
+                        <dt>태양광</dt>
+                        <dd>100kW</dd>
+                    </dl>
+                    <dl class="pcs">
+                        <dt>PCS</dt>
+                        <dd>100kW</dd>
+                    </dl>
+                    <dl class="battery">
+                        <dt>배터리</dt>
+                        <dd>100kW</dd>
+                    </dl>
+                    <p class="date">2022.06.14 14:22:34</p>
+                    <a href="javascript:void(0)" class="nav-btn logout"></a>
+                </div>
+            </div>
+
+            <div class="dash-cont">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-detailInfo-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-detailInfo" type="button" role="tab" aria-controls="nav-detailInfo"
+                            aria-selected="true">상세정보</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <!-- 상세정보 -->
+                    <div class="tab-pane fade show active" id="nav-detailInfo" role="tabpanel"
+                        aria-labelledby="nav-detailInfo-tab">
+                        <div class="tab-btn-area d-flex justify-content-end align-items-center">
+                            <button class="active">초기화</button>
+                            <button class="">저장</button>
+                        </div>
+                        <div class="stick-head" style="height: 400px;">
+                            <table class="table-dark mt-0">
+                                <thead>
+                                    <tr>
+                                        <th>label</th>
+                                        <th>label</th>
+                                        <th>label</th>
+                                        <th>label</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                    </tr>
+                                    <tr>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                    </tr>
+                                    <tr>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                    </tr>
+                                    <tr>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                    </tr>
+                                    <tr>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                    </tr>
+                                    <tr>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                    </tr>
+                                    <tr>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                    </tr>
+                                    <tr>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                    </tr>
+                                    <tr>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                    </tr>
+                                    <tr>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                    </tr>
+                                    <tr>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                    </tr>
+                                    <tr>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                        <td>value</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
