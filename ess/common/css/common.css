@@ -241,7 +241,10 @@ input {
 
 .login-box {
   width: 420px;
-  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -659,11 +662,9 @@ input::-webkit-search-results-decoration {
 }
 
 .map-location {
-  position: absolute;
-  width: 355px;
-  height: 350px;
-  top: 100px;
-  left: 50px;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .map-pointer {
@@ -673,16 +674,23 @@ input::-webkit-search-results-decoration {
   width: 42px;
   height: 42px;
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+
 }
 
 .map-pointer.normal {
   background-image: url(../images/ico-location-normal.svg);
+  top: 500px;
+  left: 700px;
+}
+
+.map-pointer.error {
+  background-image: url(../images/ico-location-error.svg);
+  top: 300px;
+  left: 500px;
 }
 
 .map-popover {
+  display: none;
   background: #131B24;
   border-radius: 0.5rem;
   width: 355px;
@@ -690,9 +698,12 @@ input::-webkit-search-results-decoration {
   position: absolute;
   box-shadow: 6px 6px 10px #00000029;
   text-align: center;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%)
+  left: 545px;
+  top: 200px;
+}
+
+.map-popover.show {
+  display: block;
 }
 
 .map-popover::after {
