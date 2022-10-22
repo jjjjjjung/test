@@ -949,7 +949,7 @@ input::-webkit-search-results-decoration {
 
 .gnb-menu.active.alarm,
 .gnb-menu.alarm:hover {
-  background-image: url(../images/ico-menu-alarm-active.svg);
+  background-image: url(../images/ico-alarm-active.svg);
 }
 
 .gnb-menu.active.control,
