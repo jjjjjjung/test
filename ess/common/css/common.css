@@ -386,7 +386,7 @@ a.btn-primary:active {
 /*화면세부정보*/
 .side-bar {
   background: url(../images/bg.png) no-repeat 0 0;
-  width: 520px;
+  width: 460px;
   padding: 20px 40px;
   background-size: cover;
 }
@@ -599,7 +599,7 @@ input::-webkit-search-results-decoration {
 }
 
 .map-area {
-  width: calc(100% - 520px);
+  width: calc(100% - 460px);
   background: url(../images/img-map.png) no-repeat center;
   background-size: cover;
   padding: 30px 40px;
